@@ -1,0 +1,565 @@
+[0.126s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--cmake-args', '-DCMAKE_BUILD_TYPE=Release', '--packages-select', 'rm_decision', 'path_motion_planning', 'point_lio', 'fast_lio', 'icp_relocalization']
+[0.126s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=12, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['rm_decision', 'path_motion_planning', 'point_lio', 'fast_lio', 'icp_relocalization'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=['-DCMAKE_BUILD_TYPE=Release'], cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7fda8f72dab0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7fda8f72d540>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7fda8f72d540>>, mixin_verb=('build',))
+[0.266s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.266s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.266s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.266s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.267s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.267s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.267s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/sentry-nov/code/colcon_3'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(src/auto_start) by extensions ['ignore', 'ignore_ament_install']
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(src/auto_start) by extension 'ignore'
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(src/auto_start) by extension 'ignore_ament_install'
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(src/auto_start) by extensions ['colcon_pkg']
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(src/auto_start) by extension 'colcon_pkg'
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(src/auto_start) by extensions ['colcon_meta']
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(src/auto_start) by extension 'colcon_meta'
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(src/auto_start) by extensions ['ros']
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(src/auto_start) by extension 'ros'
+[0.281s] DEBUG:colcon.colcon_core.package_identification:Package 'src/auto_start' with type 'ros.ament_cmake' and name 'auto_start'
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(src/common) by extensions ['ignore', 'ignore_ament_install']
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(src/common) by extension 'ignore'
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(src/common) by extension 'ignore_ament_install'
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(src/common) by extensions ['colcon_pkg']
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(src/common) by extension 'colcon_pkg'
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(src/common) by extensions ['colcon_meta']
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(src/common) by extension 'colcon_meta'
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(src/common) by extensions ['ros']
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(src/common) by extension 'ros'
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(src/common) by extensions ['cmake', 'python']
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(src/common) by extension 'cmake'
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(src/common) by extension 'python'
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(src/common) by extensions ['python_setup_py']
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(src/common) by extension 'python_setup_py'
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(src/common/debug_tools) by extensions ['ignore', 'ignore_ament_install']
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(src/common/debug_tools) by extension 'ignore'
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(src/common/debug_tools) by extension 'ignore_ament_install'
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(src/common/debug_tools) by extensions ['colcon_pkg']
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(src/common/debug_tools) by extension 'colcon_pkg'
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(src/common/debug_tools) by extensions ['colcon_meta']
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(src/common/debug_tools) by extension 'colcon_meta'
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(src/common/debug_tools) by extensions ['ros']
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(src/common/debug_tools) by extension 'ros'
+[0.283s] DEBUG:colcon.colcon_core.package_identification:Package 'src/common/debug_tools' with type 'ros.ament_cmake' and name 'debug_tools'
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(src/common/livox_ros_driver2) by extensions ['ignore', 'ignore_ament_install']
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(src/common/livox_ros_driver2) by extension 'ignore'
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(src/common/livox_ros_driver2) by extension 'ignore_ament_install'
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(src/common/livox_ros_driver2) by extensions ['colcon_pkg']
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(src/common/livox_ros_driver2) by extension 'colcon_pkg'
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(src/common/livox_ros_driver2) by extensions ['colcon_meta']
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(src/common/livox_ros_driver2) by extension 'colcon_meta'
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(src/common/livox_ros_driver2) by extensions ['ros']
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(src/common/livox_ros_driver2) by extension 'ros'
+[0.285s] DEBUG:colcon.colcon_core.package_identification:Package 'src/common/livox_ros_driver2' with type 'ros.ament_cmake' and name 'livox_ros_driver2'
+[0.285s] Level 1:colcon.colcon_core.package_identification:_identify(src/common/rm_decision) by extensions ['ignore', 'ignore_ament_install']
+[0.285s] Level 1:colcon.colcon_core.package_identification:_identify(src/common/rm_decision) by extension 'ignore'
+[0.285s] Level 1:colcon.colcon_core.package_identification:_identify(src/common/rm_decision) by extension 'ignore_ament_install'
+[0.285s] Level 1:colcon.colcon_core.package_identification:_identify(src/common/rm_decision) by extensions ['colcon_pkg']
+[0.285s] Level 1:colcon.colcon_core.package_identification:_identify(src/common/rm_decision) by extension 'colcon_pkg'
+[0.285s] Level 1:colcon.colcon_core.package_identification:_identify(src/common/rm_decision) by extensions ['colcon_meta']
+[0.285s] Level 1:colcon.colcon_core.package_identification:_identify(src/common/rm_decision) by extension 'colcon_meta'
+[0.285s] Level 1:colcon.colcon_core.package_identification:_identify(src/common/rm_decision) by extensions ['ros']
+[0.285s] Level 1:colcon.colcon_core.package_identification:_identify(src/common/rm_decision) by extension 'ros'
+[0.286s] DEBUG:colcon.colcon_core.package_identification:Package 'src/common/rm_decision' with type 'ros.ament_cmake' and name 'rm_decision'
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(src/common/rm_interface) by extensions ['ignore', 'ignore_ament_install']
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(src/common/rm_interface) by extension 'ignore'
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(src/common/rm_interface) by extension 'ignore_ament_install'
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(src/common/rm_interface) by extensions ['colcon_pkg']
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(src/common/rm_interface) by extension 'colcon_pkg'
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(src/common/rm_interface) by extensions ['colcon_meta']
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(src/common/rm_interface) by extension 'colcon_meta'
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(src/common/rm_interface) by extensions ['ros']
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(src/common/rm_interface) by extension 'ros'
+[0.287s] DEBUG:colcon.colcon_core.package_identification:Package 'src/common/rm_interface' with type 'ros.ament_cmake' and name 'rm_interface'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(src/common/rm_serial) by extensions ['ignore', 'ignore_ament_install']
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(src/common/rm_serial) by extension 'ignore'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(src/common/rm_serial) by extension 'ignore_ament_install'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(src/common/rm_serial) by extensions ['colcon_pkg']
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(src/common/rm_serial) by extension 'colcon_pkg'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(src/common/rm_serial) by extensions ['colcon_meta']
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(src/common/rm_serial) by extension 'colcon_meta'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(src/common/rm_serial) by extensions ['ros']
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(src/common/rm_serial) by extension 'ros'
+[0.288s] DEBUG:colcon.colcon_core.package_identification:Package 'src/common/rm_serial' with type 'ros.ament_cmake' and name 'rm_serial'
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(src/common/rviz_plugin) by extensions ['ignore', 'ignore_ament_install']
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(src/common/rviz_plugin) by extension 'ignore'
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(src/common/rviz_plugin) by extension 'ignore_ament_install'
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(src/common/rviz_plugin) by extensions ['colcon_pkg']
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(src/common/rviz_plugin) by extension 'colcon_pkg'
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(src/common/rviz_plugin) by extensions ['colcon_meta']
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(src/common/rviz_plugin) by extension 'colcon_meta'
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(src/common/rviz_plugin) by extensions ['ros']
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(src/common/rviz_plugin) by extension 'ros'
+[0.289s] DEBUG:colcon.colcon_core.package_identification:Package 'src/common/rviz_plugin' with type 'ros.ament_cmake' and name 'rviz_plugin'
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation) by extensions ['ignore', 'ignore_ament_install']
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation) by extension 'ignore'
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation) by extension 'ignore_ament_install'
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation) by extensions ['colcon_pkg']
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation) by extension 'colcon_pkg'
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation) by extensions ['colcon_meta']
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation) by extension 'colcon_meta'
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation) by extensions ['ros']
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation) by extension 'ros'
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation) by extensions ['cmake', 'python']
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation) by extension 'cmake'
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation) by extension 'python'
+[0.290s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation) by extensions ['python_setup_py']
+[0.290s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation) by extension 'python_setup_py'
+[0.290s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation/altitude_map) by extensions ['ignore', 'ignore_ament_install']
+[0.290s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation/altitude_map) by extension 'ignore'
+[0.290s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation/altitude_map) by extension 'ignore_ament_install'
+[0.290s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation/altitude_map) by extensions ['colcon_pkg']
+[0.290s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation/altitude_map) by extension 'colcon_pkg'
+[0.290s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation/altitude_map) by extensions ['colcon_meta']
+[0.290s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation/altitude_map) by extension 'colcon_meta'
+[0.290s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation/altitude_map) by extensions ['ros']
+[0.290s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation/altitude_map) by extension 'ros'
+[0.291s] DEBUG:colcon.colcon_core.package_identification:Package 'src/navigation/altitude_map' with type 'ros.ament_cmake' and name 'altitude_map'
+[0.291s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation/path_motion_planning) by extensions ['ignore', 'ignore_ament_install']
+[0.291s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation/path_motion_planning) by extension 'ignore'
+[0.291s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation/path_motion_planning) by extension 'ignore_ament_install'
+[0.291s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation/path_motion_planning) by extensions ['colcon_pkg']
+[0.291s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation/path_motion_planning) by extension 'colcon_pkg'
+[0.291s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation/path_motion_planning) by extensions ['colcon_meta']
+[0.291s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation/path_motion_planning) by extension 'colcon_meta'
+[0.291s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation/path_motion_planning) by extensions ['ros']
+[0.291s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation/path_motion_planning) by extension 'ros'
+[0.292s] DEBUG:colcon.colcon_core.package_identification:Package 'src/navigation/path_motion_planning' with type 'ros.ament_cmake' and name 'path_motion_planning'
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam) by extensions ['ignore', 'ignore_ament_install']
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam) by extension 'ignore'
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam) by extension 'ignore_ament_install'
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam) by extensions ['colcon_pkg']
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam) by extension 'colcon_pkg'
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam) by extensions ['colcon_meta']
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam) by extension 'colcon_meta'
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam) by extensions ['ros']
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam) by extension 'ros'
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam) by extensions ['cmake', 'python']
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam) by extension 'cmake'
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam) by extension 'python'
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam) by extensions ['python_setup_py']
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam) by extension 'python_setup_py'
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam/FAST_LIO-ROS2) by extensions ['ignore', 'ignore_ament_install']
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam/FAST_LIO-ROS2) by extension 'ignore'
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam/FAST_LIO-ROS2) by extension 'ignore_ament_install'
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam/FAST_LIO-ROS2) by extensions ['colcon_pkg']
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam/FAST_LIO-ROS2) by extension 'colcon_pkg'
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam/FAST_LIO-ROS2) by extensions ['colcon_meta']
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam/FAST_LIO-ROS2) by extension 'colcon_meta'
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam/FAST_LIO-ROS2) by extensions ['ros']
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam/FAST_LIO-ROS2) by extension 'ros'
+[0.294s] DEBUG:colcon.colcon_core.package_identification:Package 'src/slam/FAST_LIO-ROS2' with type 'ros.ament_cmake' and name 'fast_lio'
+[0.295s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam/icp_relocalization) by extensions ['ignore', 'ignore_ament_install']
+[0.295s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam/icp_relocalization) by extension 'ignore'
+[0.295s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam/icp_relocalization) by extension 'ignore_ament_install'
+[0.295s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam/icp_relocalization) by extensions ['colcon_pkg']
+[0.295s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam/icp_relocalization) by extension 'colcon_pkg'
+[0.295s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam/icp_relocalization) by extensions ['colcon_meta']
+[0.295s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam/icp_relocalization) by extension 'colcon_meta'
+[0.295s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam/icp_relocalization) by extensions ['ros']
+[0.295s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam/icp_relocalization) by extension 'ros'
+[0.296s] DEBUG:colcon.colcon_core.package_identification:Package 'src/slam/icp_relocalization' with type 'ros.ament_cmake' and name 'icp_relocalization'
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam/ikd_tree_mapping) by extensions ['ignore', 'ignore_ament_install']
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam/ikd_tree_mapping) by extension 'ignore'
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam/ikd_tree_mapping) by extension 'ignore_ament_install'
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam/ikd_tree_mapping) by extensions ['colcon_pkg']
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam/ikd_tree_mapping) by extension 'colcon_pkg'
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam/ikd_tree_mapping) by extensions ['colcon_meta']
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam/ikd_tree_mapping) by extension 'colcon_meta'
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam/ikd_tree_mapping) by extensions ['ros']
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam/ikd_tree_mapping) by extension 'ros'
+[0.297s] DEBUG:colcon.colcon_core.package_identification:Package 'src/slam/ikd_tree_mapping' with type 'ros.ament_cmake' and name 'ikd_tree_mapping'
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam/m_detector) by extensions ['ignore', 'ignore_ament_install']
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam/m_detector) by extension 'ignore'
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam/m_detector) by extension 'ignore_ament_install'
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam/m_detector) by extensions ['colcon_pkg']
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam/m_detector) by extension 'colcon_pkg'
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam/m_detector) by extensions ['colcon_meta']
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam/m_detector) by extension 'colcon_meta'
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam/m_detector) by extensions ['ros']
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam/m_detector) by extension 'ros'
+[0.298s] DEBUG:colcon.colcon_core.package_identification:Package 'src/slam/m_detector' with type 'ros.ament_cmake' and name 'm_detector'
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam/point_lio_ros2) by extensions ['ignore', 'ignore_ament_install']
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam/point_lio_ros2) by extension 'ignore'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam/point_lio_ros2) by extension 'ignore_ament_install'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam/point_lio_ros2) by extensions ['colcon_pkg']
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam/point_lio_ros2) by extension 'colcon_pkg'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam/point_lio_ros2) by extensions ['colcon_meta']
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam/point_lio_ros2) by extension 'colcon_meta'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam/point_lio_ros2) by extensions ['ros']
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam/point_lio_ros2) by extension 'ros'
+[0.300s] DEBUG:colcon.colcon_core.package_identification:Package 'src/slam/point_lio_ros2' with type 'ros.ament_cmake' and name 'point_lio'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam/tilted_lidar) by extensions ['ignore', 'ignore_ament_install']
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam/tilted_lidar) by extension 'ignore'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam/tilted_lidar) by extension 'ignore_ament_install'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam/tilted_lidar) by extensions ['colcon_pkg']
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam/tilted_lidar) by extension 'colcon_pkg'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam/tilted_lidar) by extensions ['colcon_meta']
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam/tilted_lidar) by extension 'colcon_meta'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam/tilted_lidar) by extensions ['ros']
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam/tilted_lidar) by extension 'ros'
+[0.301s] DEBUG:colcon.colcon_core.package_identification:Package 'src/slam/tilted_lidar' with type 'ros.ament_cmake' and name 'tilted_lidar'
+[0.301s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.301s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.301s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.301s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.301s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.336s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'auto_start' in 'src/auto_start'
+[0.336s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'debug_tools' in 'src/common/debug_tools'
+[0.336s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'livox_ros_driver2' in 'src/common/livox_ros_driver2'
+[0.336s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'rm_interface' in 'src/common/rm_interface'
+[0.336s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'rviz_plugin' in 'src/common/rviz_plugin'
+[0.336s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'tilted_lidar' in 'src/slam/tilted_lidar'
+[0.336s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'altitude_map' in 'src/navigation/altitude_map'
+[0.336s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'ikd_tree_mapping' in 'src/slam/ikd_tree_mapping'
+[0.336s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'm_detector' in 'src/slam/m_detector'
+[0.337s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'rm_serial' in 'src/common/rm_serial'
+[0.339s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.339s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.344s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 18 installed packages in /home/sentry-nov/code/colcon_3/install
+[0.347s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 273 installed packages in /opt/ros/humble
+[0.348s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.393s] Level 5:colcon.colcon_core.verb:set package 'fast_lio' build argument 'cmake_args' from command line to '['-DCMAKE_BUILD_TYPE=Release']'
+[0.393s] Level 5:colcon.colcon_core.verb:set package 'fast_lio' build argument 'cmake_target' from command line to 'None'
+[0.393s] Level 5:colcon.colcon_core.verb:set package 'fast_lio' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.393s] Level 5:colcon.colcon_core.verb:set package 'fast_lio' build argument 'cmake_clean_cache' from command line to 'False'
+[0.393s] Level 5:colcon.colcon_core.verb:set package 'fast_lio' build argument 'cmake_clean_first' from command line to 'False'
+[0.393s] Level 5:colcon.colcon_core.verb:set package 'fast_lio' build argument 'cmake_force_configure' from command line to 'False'
+[0.393s] Level 5:colcon.colcon_core.verb:set package 'fast_lio' build argument 'ament_cmake_args' from command line to 'None'
+[0.393s] Level 5:colcon.colcon_core.verb:set package 'fast_lio' build argument 'catkin_cmake_args' from command line to 'None'
+[0.393s] Level 5:colcon.colcon_core.verb:set package 'fast_lio' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.393s] DEBUG:colcon.colcon_core.verb:Building package 'fast_lio' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/sentry-nov/code/colcon_3/build/fast_lio', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_BUILD_TYPE=Release'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/sentry-nov/code/colcon_3/install/fast_lio', 'merge_install': False, 'path': '/home/sentry-nov/code/colcon_3/src/slam/FAST_LIO-ROS2', 'symlink_install': False, 'test_result_base': None}
+[0.394s] Level 5:colcon.colcon_core.verb:set package 'icp_relocalization' build argument 'cmake_args' from command line to '['-DCMAKE_BUILD_TYPE=Release']'
+[0.394s] Level 5:colcon.colcon_core.verb:set package 'icp_relocalization' build argument 'cmake_target' from command line to 'None'
+[0.394s] Level 5:colcon.colcon_core.verb:set package 'icp_relocalization' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.394s] Level 5:colcon.colcon_core.verb:set package 'icp_relocalization' build argument 'cmake_clean_cache' from command line to 'False'
+[0.394s] Level 5:colcon.colcon_core.verb:set package 'icp_relocalization' build argument 'cmake_clean_first' from command line to 'False'
+[0.394s] Level 5:colcon.colcon_core.verb:set package 'icp_relocalization' build argument 'cmake_force_configure' from command line to 'False'
+[0.394s] Level 5:colcon.colcon_core.verb:set package 'icp_relocalization' build argument 'ament_cmake_args' from command line to 'None'
+[0.394s] Level 5:colcon.colcon_core.verb:set package 'icp_relocalization' build argument 'catkin_cmake_args' from command line to 'None'
+[0.394s] Level 5:colcon.colcon_core.verb:set package 'icp_relocalization' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.394s] DEBUG:colcon.colcon_core.verb:Building package 'icp_relocalization' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/sentry-nov/code/colcon_3/build/icp_relocalization', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_BUILD_TYPE=Release'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/sentry-nov/code/colcon_3/install/icp_relocalization', 'merge_install': False, 'path': '/home/sentry-nov/code/colcon_3/src/slam/icp_relocalization', 'symlink_install': False, 'test_result_base': None}
+[0.394s] Level 5:colcon.colcon_core.verb:set package 'path_motion_planning' build argument 'cmake_args' from command line to '['-DCMAKE_BUILD_TYPE=Release']'
+[0.394s] Level 5:colcon.colcon_core.verb:set package 'path_motion_planning' build argument 'cmake_target' from command line to 'None'
+[0.394s] Level 5:colcon.colcon_core.verb:set package 'path_motion_planning' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.394s] Level 5:colcon.colcon_core.verb:set package 'path_motion_planning' build argument 'cmake_clean_cache' from command line to 'False'
+[0.394s] Level 5:colcon.colcon_core.verb:set package 'path_motion_planning' build argument 'cmake_clean_first' from command line to 'False'
+[0.394s] Level 5:colcon.colcon_core.verb:set package 'path_motion_planning' build argument 'cmake_force_configure' from command line to 'False'
+[0.394s] Level 5:colcon.colcon_core.verb:set package 'path_motion_planning' build argument 'ament_cmake_args' from command line to 'None'
+[0.394s] Level 5:colcon.colcon_core.verb:set package 'path_motion_planning' build argument 'catkin_cmake_args' from command line to 'None'
+[0.394s] Level 5:colcon.colcon_core.verb:set package 'path_motion_planning' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.394s] DEBUG:colcon.colcon_core.verb:Building package 'path_motion_planning' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/sentry-nov/code/colcon_3/build/path_motion_planning', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_BUILD_TYPE=Release'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/sentry-nov/code/colcon_3/install/path_motion_planning', 'merge_install': False, 'path': '/home/sentry-nov/code/colcon_3/src/navigation/path_motion_planning', 'symlink_install': False, 'test_result_base': None}
+[0.395s] Level 5:colcon.colcon_core.verb:set package 'point_lio' build argument 'cmake_args' from command line to '['-DCMAKE_BUILD_TYPE=Release']'
+[0.395s] Level 5:colcon.colcon_core.verb:set package 'point_lio' build argument 'cmake_target' from command line to 'None'
+[0.395s] Level 5:colcon.colcon_core.verb:set package 'point_lio' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.395s] Level 5:colcon.colcon_core.verb:set package 'point_lio' build argument 'cmake_clean_cache' from command line to 'False'
+[0.395s] Level 5:colcon.colcon_core.verb:set package 'point_lio' build argument 'cmake_clean_first' from command line to 'False'
+[0.395s] Level 5:colcon.colcon_core.verb:set package 'point_lio' build argument 'cmake_force_configure' from command line to 'False'
+[0.395s] Level 5:colcon.colcon_core.verb:set package 'point_lio' build argument 'ament_cmake_args' from command line to 'None'
+[0.395s] Level 5:colcon.colcon_core.verb:set package 'point_lio' build argument 'catkin_cmake_args' from command line to 'None'
+[0.395s] Level 5:colcon.colcon_core.verb:set package 'point_lio' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.395s] DEBUG:colcon.colcon_core.verb:Building package 'point_lio' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/sentry-nov/code/colcon_3/build/point_lio', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_BUILD_TYPE=Release'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/sentry-nov/code/colcon_3/install/point_lio', 'merge_install': False, 'path': '/home/sentry-nov/code/colcon_3/src/slam/point_lio_ros2', 'symlink_install': False, 'test_result_base': None}
+[0.395s] Level 5:colcon.colcon_core.verb:set package 'rm_decision' build argument 'cmake_args' from command line to '['-DCMAKE_BUILD_TYPE=Release']'
+[0.395s] Level 5:colcon.colcon_core.verb:set package 'rm_decision' build argument 'cmake_target' from command line to 'None'
+[0.395s] Level 5:colcon.colcon_core.verb:set package 'rm_decision' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.395s] Level 5:colcon.colcon_core.verb:set package 'rm_decision' build argument 'cmake_clean_cache' from command line to 'False'
+[0.395s] Level 5:colcon.colcon_core.verb:set package 'rm_decision' build argument 'cmake_clean_first' from command line to 'False'
+[0.395s] Level 5:colcon.colcon_core.verb:set package 'rm_decision' build argument 'cmake_force_configure' from command line to 'False'
+[0.395s] Level 5:colcon.colcon_core.verb:set package 'rm_decision' build argument 'ament_cmake_args' from command line to 'None'
+[0.395s] Level 5:colcon.colcon_core.verb:set package 'rm_decision' build argument 'catkin_cmake_args' from command line to 'None'
+[0.395s] Level 5:colcon.colcon_core.verb:set package 'rm_decision' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.395s] DEBUG:colcon.colcon_core.verb:Building package 'rm_decision' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/sentry-nov/code/colcon_3/build/rm_decision', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_BUILD_TYPE=Release'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/sentry-nov/code/colcon_3/install/rm_decision', 'merge_install': False, 'path': '/home/sentry-nov/code/colcon_3/src/common/rm_decision', 'symlink_install': False, 'test_result_base': None}
+[0.395s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.396s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.397s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/sentry-nov/code/colcon_3/src/slam/FAST_LIO-ROS2' with build type 'ament_cmake'
+[0.397s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/sentry-nov/code/colcon_3/src/slam/FAST_LIO-ROS2'
+[0.404s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.404s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.404s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.410s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/sentry-nov/code/colcon_3/src/slam/icp_relocalization' with build type 'ament_cmake'
+[0.410s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/sentry-nov/code/colcon_3/src/slam/icp_relocalization'
+[0.410s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.410s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.414s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/sentry-nov/code/colcon_3/src/navigation/path_motion_planning' with build type 'ament_cmake'
+[0.414s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/sentry-nov/code/colcon_3/src/navigation/path_motion_planning'
+[0.415s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.415s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.419s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/sentry-nov/code/colcon_3/src/slam/point_lio_ros2' with build type 'ament_cmake'
+[0.420s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/sentry-nov/code/colcon_3/src/slam/point_lio_ros2'
+[0.420s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.420s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.424s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/sentry-nov/code/colcon_3/src/common/rm_decision' with build type 'ament_cmake'
+[0.425s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/sentry-nov/code/colcon_3/src/common/rm_decision'
+[0.425s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.425s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.436s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sentry-nov/code/colcon_3/build/fast_lio': CMAKE_PREFIX_PATH=/home/sentry-nov/code/colcon_3/install/livox_ros_driver2:/home/sentry-nov/code/colcon_3/install/debug_tools:/home/sentry-nov/code/colcon_3/install/tilted_lidar:/home/sentry-nov/code/colcon_3/install/rviz_plugin:/home/sentry-nov/code/colcon_3/install/robot_decision_system:/home/sentry-nov/code/colcon_3/install/rm_serial:/home/sentry-nov/code/colcon_3/install/rm_decision:/home/sentry-nov/code/colcon_3/install/motion_planning:/home/sentry-nov/code/colcon_3/install/path_planning:/home/sentry-nov/code/colcon_3/install/path_motion_planning:/home/sentry-nov/code/colcon_3/install/ikd_tree_mapping:/home/sentry-nov/code/colcon_3/install/rm_interface:/home/sentry-nov/code/colcon_3/install/point_lio:/home/sentry-nov/code/colcon_3/install/m_detector:/home/sentry-nov/code/colcon_3/install/fast_lio:/home/sentry-nov/code/colcon_3/install/icp_relocalization:/home/sentry-nov/code/colcon_3/install/altitude_map:/home/sentry-nov/code/colcon_3/install/auto_start:/opt/ros/humble LD_LIBRARY_PATH=/home/sentry-nov/code/colcon_3/install/livox_ros_driver2/lib:/home/sentry-nov/code/colcon_3/install/robot_decision_system/lib:/home/sentry-nov/code/colcon_3/install/path_planning/lib:/home/sentry-nov/code/colcon_3/install/path_motion_planning/lib:/home/sentry-nov/code/colcon_3/install/rm_interface/lib:/home/sentry-nov/code/colcon_3/install/m_detector/lib:/home/sentry-nov/code/colcon_3/install/fast_lio/lib:/home/sentry-nov/code/colcon_3/install/altitude_map/lib:/usr/local/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/sentry-nov/code/colcon_3/build/fast_lio -- -j12 -l12
+[0.449s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sentry-nov/code/colcon_3/build/icp_relocalization': CMAKE_PREFIX_PATH=/home/sentry-nov/code/colcon_3/install/debug_tools:/home/sentry-nov/code/colcon_3/install/tilted_lidar:/home/sentry-nov/code/colcon_3/install/rviz_plugin:/home/sentry-nov/code/colcon_3/install/robot_decision_system:/home/sentry-nov/code/colcon_3/install/rm_serial:/home/sentry-nov/code/colcon_3/install/rm_decision:/home/sentry-nov/code/colcon_3/install/motion_planning:/home/sentry-nov/code/colcon_3/install/path_planning:/home/sentry-nov/code/colcon_3/install/path_motion_planning:/home/sentry-nov/code/colcon_3/install/ikd_tree_mapping:/home/sentry-nov/code/colcon_3/install/rm_interface:/home/sentry-nov/code/colcon_3/install/point_lio:/home/sentry-nov/code/colcon_3/install/m_detector:/home/sentry-nov/code/colcon_3/install/fast_lio:/home/sentry-nov/code/colcon_3/install/livox_ros_driver2:/home/sentry-nov/code/colcon_3/install/icp_relocalization:/home/sentry-nov/code/colcon_3/install/altitude_map:/home/sentry-nov/code/colcon_3/install/auto_start:/opt/ros/humble /usr/bin/cmake --build /home/sentry-nov/code/colcon_3/build/icp_relocalization -- -j12 -l12
+[0.457s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sentry-nov/code/colcon_3/build/path_motion_planning': CMAKE_PREFIX_PATH=/home/sentry-nov/code/colcon_3/install/rm_interface:/home/sentry-nov/code/colcon_3/install/debug_tools:/home/sentry-nov/code/colcon_3/install/tilted_lidar:/home/sentry-nov/code/colcon_3/install/rviz_plugin:/home/sentry-nov/code/colcon_3/install/robot_decision_system:/home/sentry-nov/code/colcon_3/install/rm_serial:/home/sentry-nov/code/colcon_3/install/rm_decision:/home/sentry-nov/code/colcon_3/install/motion_planning:/home/sentry-nov/code/colcon_3/install/path_planning:/home/sentry-nov/code/colcon_3/install/path_motion_planning:/home/sentry-nov/code/colcon_3/install/ikd_tree_mapping:/home/sentry-nov/code/colcon_3/install/point_lio:/home/sentry-nov/code/colcon_3/install/m_detector:/home/sentry-nov/code/colcon_3/install/fast_lio:/home/sentry-nov/code/colcon_3/install/livox_ros_driver2:/home/sentry-nov/code/colcon_3/install/icp_relocalization:/home/sentry-nov/code/colcon_3/install/altitude_map:/home/sentry-nov/code/colcon_3/install/auto_start:/opt/ros/humble LD_LIBRARY_PATH=/home/sentry-nov/code/colcon_3/install/rm_interface/lib:/home/sentry-nov/code/colcon_3/install/robot_decision_system/lib:/home/sentry-nov/code/colcon_3/install/path_planning/lib:/home/sentry-nov/code/colcon_3/install/path_motion_planning/lib:/home/sentry-nov/code/colcon_3/install/m_detector/lib:/home/sentry-nov/code/colcon_3/install/fast_lio/lib:/home/sentry-nov/code/colcon_3/install/livox_ros_driver2/lib:/home/sentry-nov/code/colcon_3/install/altitude_map/lib:/usr/local/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/sentry-nov/code/colcon_3/build/path_motion_planning -- -j12 -l12
+[0.465s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sentry-nov/code/colcon_3/build/point_lio': CMAKE_PREFIX_PATH=/home/sentry-nov/code/colcon_3/install/livox_ros_driver2:/home/sentry-nov/code/colcon_3/install/tilted_lidar:/home/sentry-nov/code/colcon_3/install/rviz_plugin:/home/sentry-nov/code/colcon_3/install/robot_decision_system:/home/sentry-nov/code/colcon_3/install/rm_serial:/home/sentry-nov/code/colcon_3/install/rm_decision:/home/sentry-nov/code/colcon_3/install/motion_planning:/home/sentry-nov/code/colcon_3/install/path_planning:/home/sentry-nov/code/colcon_3/install/path_motion_planning:/home/sentry-nov/code/colcon_3/install/ikd_tree_mapping:/home/sentry-nov/code/colcon_3/install/rm_interface:/home/sentry-nov/code/colcon_3/install/point_lio:/home/sentry-nov/code/colcon_3/install/m_detector:/home/sentry-nov/code/colcon_3/install/fast_lio:/home/sentry-nov/code/colcon_3/install/icp_relocalization:/home/sentry-nov/code/colcon_3/install/altitude_map:/home/sentry-nov/code/colcon_3/install/debug_tools:/home/sentry-nov/code/colcon_3/install/auto_start:/opt/ros/humble LD_LIBRARY_PATH=/home/sentry-nov/code/colcon_3/install/livox_ros_driver2/lib:/home/sentry-nov/code/colcon_3/install/robot_decision_system/lib:/home/sentry-nov/code/colcon_3/install/path_planning/lib:/home/sentry-nov/code/colcon_3/install/path_motion_planning/lib:/home/sentry-nov/code/colcon_3/install/rm_interface/lib:/home/sentry-nov/code/colcon_3/install/m_detector/lib:/home/sentry-nov/code/colcon_3/install/fast_lio/lib:/home/sentry-nov/code/colcon_3/install/altitude_map/lib:/usr/local/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/sentry-nov/code/colcon_3/build/point_lio -- -j12 -l12
+[0.472s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sentry-nov/code/colcon_3/build/rm_decision': CMAKE_PREFIX_PATH=/home/sentry-nov/code/colcon_3/install/rm_interface:/home/sentry-nov/code/colcon_3/install/debug_tools:/home/sentry-nov/code/colcon_3/install/tilted_lidar:/home/sentry-nov/code/colcon_3/install/rviz_plugin:/home/sentry-nov/code/colcon_3/install/robot_decision_system:/home/sentry-nov/code/colcon_3/install/rm_serial:/home/sentry-nov/code/colcon_3/install/rm_decision:/home/sentry-nov/code/colcon_3/install/motion_planning:/home/sentry-nov/code/colcon_3/install/path_planning:/home/sentry-nov/code/colcon_3/install/path_motion_planning:/home/sentry-nov/code/colcon_3/install/ikd_tree_mapping:/home/sentry-nov/code/colcon_3/install/point_lio:/home/sentry-nov/code/colcon_3/install/m_detector:/home/sentry-nov/code/colcon_3/install/fast_lio:/home/sentry-nov/code/colcon_3/install/livox_ros_driver2:/home/sentry-nov/code/colcon_3/install/icp_relocalization:/home/sentry-nov/code/colcon_3/install/altitude_map:/home/sentry-nov/code/colcon_3/install/auto_start:/opt/ros/humble LD_LIBRARY_PATH=/home/sentry-nov/code/colcon_3/install/rm_interface/lib:/home/sentry-nov/code/colcon_3/install/robot_decision_system/lib:/home/sentry-nov/code/colcon_3/install/path_planning/lib:/home/sentry-nov/code/colcon_3/install/path_motion_planning/lib:/home/sentry-nov/code/colcon_3/install/m_detector/lib:/home/sentry-nov/code/colcon_3/install/fast_lio/lib:/home/sentry-nov/code/colcon_3/install/livox_ros_driver2/lib:/home/sentry-nov/code/colcon_3/install/altitude_map/lib:/usr/local/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/sentry-nov/code/colcon_3/build/rm_decision -- -j12 -l12
+[0.707s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sentry-nov/code/colcon_3/build/icp_relocalization' returned '0': CMAKE_PREFIX_PATH=/home/sentry-nov/code/colcon_3/install/debug_tools:/home/sentry-nov/code/colcon_3/install/tilted_lidar:/home/sentry-nov/code/colcon_3/install/rviz_plugin:/home/sentry-nov/code/colcon_3/install/robot_decision_system:/home/sentry-nov/code/colcon_3/install/rm_serial:/home/sentry-nov/code/colcon_3/install/rm_decision:/home/sentry-nov/code/colcon_3/install/motion_planning:/home/sentry-nov/code/colcon_3/install/path_planning:/home/sentry-nov/code/colcon_3/install/path_motion_planning:/home/sentry-nov/code/colcon_3/install/ikd_tree_mapping:/home/sentry-nov/code/colcon_3/install/rm_interface:/home/sentry-nov/code/colcon_3/install/point_lio:/home/sentry-nov/code/colcon_3/install/m_detector:/home/sentry-nov/code/colcon_3/install/fast_lio:/home/sentry-nov/code/colcon_3/install/livox_ros_driver2:/home/sentry-nov/code/colcon_3/install/icp_relocalization:/home/sentry-nov/code/colcon_3/install/altitude_map:/home/sentry-nov/code/colcon_3/install/auto_start:/opt/ros/humble /usr/bin/cmake --build /home/sentry-nov/code/colcon_3/build/icp_relocalization -- -j12 -l12
+[0.729s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sentry-nov/code/colcon_3/build/icp_relocalization': CMAKE_PREFIX_PATH=/home/sentry-nov/code/colcon_3/install/debug_tools:/home/sentry-nov/code/colcon_3/install/tilted_lidar:/home/sentry-nov/code/colcon_3/install/rviz_plugin:/home/sentry-nov/code/colcon_3/install/robot_decision_system:/home/sentry-nov/code/colcon_3/install/rm_serial:/home/sentry-nov/code/colcon_3/install/rm_decision:/home/sentry-nov/code/colcon_3/install/motion_planning:/home/sentry-nov/code/colcon_3/install/path_planning:/home/sentry-nov/code/colcon_3/install/path_motion_planning:/home/sentry-nov/code/colcon_3/install/ikd_tree_mapping:/home/sentry-nov/code/colcon_3/install/rm_interface:/home/sentry-nov/code/colcon_3/install/point_lio:/home/sentry-nov/code/colcon_3/install/m_detector:/home/sentry-nov/code/colcon_3/install/fast_lio:/home/sentry-nov/code/colcon_3/install/livox_ros_driver2:/home/sentry-nov/code/colcon_3/install/icp_relocalization:/home/sentry-nov/code/colcon_3/install/altitude_map:/home/sentry-nov/code/colcon_3/install/auto_start:/opt/ros/humble /usr/bin/cmake --install /home/sentry-nov/code/colcon_3/build/icp_relocalization
+[0.733s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sentry-nov/code/colcon_3/build/point_lio' returned '0': CMAKE_PREFIX_PATH=/home/sentry-nov/code/colcon_3/install/livox_ros_driver2:/home/sentry-nov/code/colcon_3/install/tilted_lidar:/home/sentry-nov/code/colcon_3/install/rviz_plugin:/home/sentry-nov/code/colcon_3/install/robot_decision_system:/home/sentry-nov/code/colcon_3/install/rm_serial:/home/sentry-nov/code/colcon_3/install/rm_decision:/home/sentry-nov/code/colcon_3/install/motion_planning:/home/sentry-nov/code/colcon_3/install/path_planning:/home/sentry-nov/code/colcon_3/install/path_motion_planning:/home/sentry-nov/code/colcon_3/install/ikd_tree_mapping:/home/sentry-nov/code/colcon_3/install/rm_interface:/home/sentry-nov/code/colcon_3/install/point_lio:/home/sentry-nov/code/colcon_3/install/m_detector:/home/sentry-nov/code/colcon_3/install/fast_lio:/home/sentry-nov/code/colcon_3/install/icp_relocalization:/home/sentry-nov/code/colcon_3/install/altitude_map:/home/sentry-nov/code/colcon_3/install/debug_tools:/home/sentry-nov/code/colcon_3/install/auto_start:/opt/ros/humble LD_LIBRARY_PATH=/home/sentry-nov/code/colcon_3/install/livox_ros_driver2/lib:/home/sentry-nov/code/colcon_3/install/robot_decision_system/lib:/home/sentry-nov/code/colcon_3/install/path_planning/lib:/home/sentry-nov/code/colcon_3/install/path_motion_planning/lib:/home/sentry-nov/code/colcon_3/install/rm_interface/lib:/home/sentry-nov/code/colcon_3/install/m_detector/lib:/home/sentry-nov/code/colcon_3/install/fast_lio/lib:/home/sentry-nov/code/colcon_3/install/altitude_map/lib:/usr/local/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/sentry-nov/code/colcon_3/build/point_lio -- -j12 -l12
+[0.739s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sentry-nov/code/colcon_3/build/point_lio': CMAKE_PREFIX_PATH=/home/sentry-nov/code/colcon_3/install/livox_ros_driver2:/home/sentry-nov/code/colcon_3/install/tilted_lidar:/home/sentry-nov/code/colcon_3/install/rviz_plugin:/home/sentry-nov/code/colcon_3/install/robot_decision_system:/home/sentry-nov/code/colcon_3/install/rm_serial:/home/sentry-nov/code/colcon_3/install/rm_decision:/home/sentry-nov/code/colcon_3/install/motion_planning:/home/sentry-nov/code/colcon_3/install/path_planning:/home/sentry-nov/code/colcon_3/install/path_motion_planning:/home/sentry-nov/code/colcon_3/install/ikd_tree_mapping:/home/sentry-nov/code/colcon_3/install/rm_interface:/home/sentry-nov/code/colcon_3/install/point_lio:/home/sentry-nov/code/colcon_3/install/m_detector:/home/sentry-nov/code/colcon_3/install/fast_lio:/home/sentry-nov/code/colcon_3/install/icp_relocalization:/home/sentry-nov/code/colcon_3/install/altitude_map:/home/sentry-nov/code/colcon_3/install/debug_tools:/home/sentry-nov/code/colcon_3/install/auto_start:/opt/ros/humble LD_LIBRARY_PATH=/home/sentry-nov/code/colcon_3/install/livox_ros_driver2/lib:/home/sentry-nov/code/colcon_3/install/robot_decision_system/lib:/home/sentry-nov/code/colcon_3/install/path_planning/lib:/home/sentry-nov/code/colcon_3/install/path_motion_planning/lib:/home/sentry-nov/code/colcon_3/install/rm_interface/lib:/home/sentry-nov/code/colcon_3/install/m_detector/lib:/home/sentry-nov/code/colcon_3/install/fast_lio/lib:/home/sentry-nov/code/colcon_3/install/altitude_map/lib:/usr/local/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/sentry-nov/code/colcon_3/build/point_lio
+[0.774s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(icp_relocalization)
+[0.776s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sentry-nov/code/colcon_3/build/icp_relocalization' returned '0': CMAKE_PREFIX_PATH=/home/sentry-nov/code/colcon_3/install/debug_tools:/home/sentry-nov/code/colcon_3/install/tilted_lidar:/home/sentry-nov/code/colcon_3/install/rviz_plugin:/home/sentry-nov/code/colcon_3/install/robot_decision_system:/home/sentry-nov/code/colcon_3/install/rm_serial:/home/sentry-nov/code/colcon_3/install/rm_decision:/home/sentry-nov/code/colcon_3/install/motion_planning:/home/sentry-nov/code/colcon_3/install/path_planning:/home/sentry-nov/code/colcon_3/install/path_motion_planning:/home/sentry-nov/code/colcon_3/install/ikd_tree_mapping:/home/sentry-nov/code/colcon_3/install/rm_interface:/home/sentry-nov/code/colcon_3/install/point_lio:/home/sentry-nov/code/colcon_3/install/m_detector:/home/sentry-nov/code/colcon_3/install/fast_lio:/home/sentry-nov/code/colcon_3/install/livox_ros_driver2:/home/sentry-nov/code/colcon_3/install/icp_relocalization:/home/sentry-nov/code/colcon_3/install/altitude_map:/home/sentry-nov/code/colcon_3/install/auto_start:/opt/ros/humble /usr/bin/cmake --install /home/sentry-nov/code/colcon_3/build/icp_relocalization
+[0.788s] Level 1:colcon.colcon_core.environment:checking '/home/sentry-nov/code/colcon_3/install/icp_relocalization' for CMake module files
+[0.790s] Level 1:colcon.colcon_core.environment:checking '/home/sentry-nov/code/colcon_3/install/icp_relocalization' for CMake config files
+[0.790s] Level 1:colcon.colcon_core.shell:create_environment_hook('icp_relocalization', 'cmake_prefix_path')
+[0.791s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sentry-nov/code/colcon_3/install/icp_relocalization/share/icp_relocalization/hook/cmake_prefix_path.ps1'
+[0.793s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sentry-nov/code/colcon_3/install/icp_relocalization/share/icp_relocalization/hook/cmake_prefix_path.dsv'
+[0.795s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sentry-nov/code/colcon_3/install/icp_relocalization/share/icp_relocalization/hook/cmake_prefix_path.sh'
+[0.798s] Level 1:colcon.colcon_core.environment:checking '/home/sentry-nov/code/colcon_3/install/icp_relocalization/lib'
+[0.798s] Level 1:colcon.colcon_core.environment:checking '/home/sentry-nov/code/colcon_3/install/icp_relocalization/bin'
+[0.798s] Level 1:colcon.colcon_core.environment:checking '/home/sentry-nov/code/colcon_3/install/icp_relocalization/lib/pkgconfig/icp_relocalization.pc'
+[0.798s] Level 1:colcon.colcon_core.environment:checking '/home/sentry-nov/code/colcon_3/install/icp_relocalization/lib/python3.10/site-packages'
+[0.799s] Level 1:colcon.colcon_core.environment:checking '/home/sentry-nov/code/colcon_3/install/icp_relocalization/bin'
+[0.800s] INFO:colcon.colcon_core.shell:Creating package script '/home/sentry-nov/code/colcon_3/install/icp_relocalization/share/icp_relocalization/package.ps1'
+[0.807s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/sentry-nov/code/colcon_3/install/icp_relocalization/share/icp_relocalization/package.dsv'
+[0.810s] INFO:colcon.colcon_core.shell:Creating package script '/home/sentry-nov/code/colcon_3/install/icp_relocalization/share/icp_relocalization/package.sh'
+[0.812s] INFO:colcon.colcon_core.shell:Creating package script '/home/sentry-nov/code/colcon_3/install/icp_relocalization/share/icp_relocalization/package.bash'
+[0.814s] INFO:colcon.colcon_core.shell:Creating package script '/home/sentry-nov/code/colcon_3/install/icp_relocalization/share/icp_relocalization/package.zsh'
+[0.816s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/sentry-nov/code/colcon_3/install/icp_relocalization/share/colcon-core/packages/icp_relocalization)
+[0.817s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(icp_relocalization)
+[0.818s] Level 1:colcon.colcon_core.environment:checking '/home/sentry-nov/code/colcon_3/install/icp_relocalization' for CMake module files
+[0.819s] Level 1:colcon.colcon_core.environment:checking '/home/sentry-nov/code/colcon_3/install/icp_relocalization' for CMake config files
+[0.819s] Level 1:colcon.colcon_core.shell:create_environment_hook('icp_relocalization', 'cmake_prefix_path')
+[0.820s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sentry-nov/code/colcon_3/install/icp_relocalization/share/icp_relocalization/hook/cmake_prefix_path.ps1'
+[0.821s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sentry-nov/code/colcon_3/install/icp_relocalization/share/icp_relocalization/hook/cmake_prefix_path.dsv'
+[0.821s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sentry-nov/code/colcon_3/install/icp_relocalization/share/icp_relocalization/hook/cmake_prefix_path.sh'
+[0.822s] Level 1:colcon.colcon_core.environment:checking '/home/sentry-nov/code/colcon_3/install/icp_relocalization/lib'
+[0.822s] Level 1:colcon.colcon_core.environment:checking '/home/sentry-nov/code/colcon_3/install/icp_relocalization/bin'
+[0.823s] Level 1:colcon.colcon_core.environment:checking '/home/sentry-nov/code/colcon_3/install/icp_relocalization/lib/pkgconfig/icp_relocalization.pc'
+[0.823s] Level 1:colcon.colcon_core.environment:checking '/home/sentry-nov/code/colcon_3/install/icp_relocalization/lib/python3.10/site-packages'
+[0.823s] Level 1:colcon.colcon_core.environment:checking '/home/sentry-nov/code/colcon_3/install/icp_relocalization/bin'
+[0.823s] INFO:colcon.colcon_core.shell:Creating package script '/home/sentry-nov/code/colcon_3/install/icp_relocalization/share/icp_relocalization/package.ps1'
+[0.824s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/sentry-nov/code/colcon_3/install/icp_relocalization/share/icp_relocalization/package.dsv'
+[0.825s] INFO:colcon.colcon_core.shell:Creating package script '/home/sentry-nov/code/colcon_3/install/icp_relocalization/share/icp_relocalization/package.sh'
+[0.826s] INFO:colcon.colcon_core.shell:Creating package script '/home/sentry-nov/code/colcon_3/install/icp_relocalization/share/icp_relocalization/package.bash'
+[0.827s] INFO:colcon.colcon_core.shell:Creating package script '/home/sentry-nov/code/colcon_3/install/icp_relocalization/share/icp_relocalization/package.zsh'
+[0.828s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/sentry-nov/code/colcon_3/install/icp_relocalization/share/colcon-core/packages/icp_relocalization)
+[0.831s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(point_lio)
+[0.832s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sentry-nov/code/colcon_3/build/point_lio' returned '0': CMAKE_PREFIX_PATH=/home/sentry-nov/code/colcon_3/install/livox_ros_driver2:/home/sentry-nov/code/colcon_3/install/tilted_lidar:/home/sentry-nov/code/colcon_3/install/rviz_plugin:/home/sentry-nov/code/colcon_3/install/robot_decision_system:/home/sentry-nov/code/colcon_3/install/rm_serial:/home/sentry-nov/code/colcon_3/install/rm_decision:/home/sentry-nov/code/colcon_3/install/motion_planning:/home/sentry-nov/code/colcon_3/install/path_planning:/home/sentry-nov/code/colcon_3/install/path_motion_planning:/home/sentry-nov/code/colcon_3/install/ikd_tree_mapping:/home/sentry-nov/code/colcon_3/install/rm_interface:/home/sentry-nov/code/colcon_3/install/point_lio:/home/sentry-nov/code/colcon_3/install/m_detector:/home/sentry-nov/code/colcon_3/install/fast_lio:/home/sentry-nov/code/colcon_3/install/icp_relocalization:/home/sentry-nov/code/colcon_3/install/altitude_map:/home/sentry-nov/code/colcon_3/install/debug_tools:/home/sentry-nov/code/colcon_3/install/auto_start:/opt/ros/humble LD_LIBRARY_PATH=/home/sentry-nov/code/colcon_3/install/livox_ros_driver2/lib:/home/sentry-nov/code/colcon_3/install/robot_decision_system/lib:/home/sentry-nov/code/colcon_3/install/path_planning/lib:/home/sentry-nov/code/colcon_3/install/path_motion_planning/lib:/home/sentry-nov/code/colcon_3/install/rm_interface/lib:/home/sentry-nov/code/colcon_3/install/m_detector/lib:/home/sentry-nov/code/colcon_3/install/fast_lio/lib:/home/sentry-nov/code/colcon_3/install/altitude_map/lib:/usr/local/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/sentry-nov/code/colcon_3/build/point_lio
+[0.832s] Level 1:colcon.colcon_core.environment:checking '/home/sentry-nov/code/colcon_3/install/point_lio' for CMake module files
+[0.833s] Level 1:colcon.colcon_core.environment:checking '/home/sentry-nov/code/colcon_3/install/point_lio' for CMake config files
+[0.834s] Level 1:colcon.colcon_core.shell:create_environment_hook('point_lio', 'cmake_prefix_path')
+[0.834s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sentry-nov/code/colcon_3/install/point_lio/share/point_lio/hook/cmake_prefix_path.ps1'
+[0.835s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sentry-nov/code/colcon_3/install/point_lio/share/point_lio/hook/cmake_prefix_path.dsv'
+[0.836s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sentry-nov/code/colcon_3/install/point_lio/share/point_lio/hook/cmake_prefix_path.sh'
+[0.837s] Level 1:colcon.colcon_core.environment:checking '/home/sentry-nov/code/colcon_3/install/point_lio/lib'
+[0.837s] Level 1:colcon.colcon_core.environment:checking '/home/sentry-nov/code/colcon_3/install/point_lio/bin'
+[0.837s] Level 1:colcon.colcon_core.environment:checking '/home/sentry-nov/code/colcon_3/install/point_lio/lib/pkgconfig/point_lio.pc'
+[0.838s] Level 1:colcon.colcon_core.environment:checking '/home/sentry-nov/code/colcon_3/install/point_lio/lib/python3.10/site-packages'
+[0.838s] Level 1:colcon.colcon_core.environment:checking '/home/sentry-nov/code/colcon_3/install/point_lio/bin'
+[0.839s] INFO:colcon.colcon_core.shell:Creating package script '/home/sentry-nov/code/colcon_3/install/point_lio/share/point_lio/package.ps1'
+[0.840s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/sentry-nov/code/colcon_3/install/point_lio/share/point_lio/package.dsv'
+[0.841s] INFO:colcon.colcon_core.shell:Creating package script '/home/sentry-nov/code/colcon_3/install/point_lio/share/point_lio/package.sh'
+[0.841s] INFO:colcon.colcon_core.shell:Creating package script '/home/sentry-nov/code/colcon_3/install/point_lio/share/point_lio/package.bash'
+[0.842s] INFO:colcon.colcon_core.shell:Creating package script '/home/sentry-nov/code/colcon_3/install/point_lio/share/point_lio/package.zsh'
+[0.843s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/sentry-nov/code/colcon_3/install/point_lio/share/colcon-core/packages/point_lio)
+[0.844s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(point_lio)
+[0.844s] Level 1:colcon.colcon_core.environment:checking '/home/sentry-nov/code/colcon_3/install/point_lio' for CMake module files
+[0.845s] Level 1:colcon.colcon_core.environment:checking '/home/sentry-nov/code/colcon_3/install/point_lio' for CMake config files
+[0.845s] Level 1:colcon.colcon_core.shell:create_environment_hook('point_lio', 'cmake_prefix_path')
+[0.846s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sentry-nov/code/colcon_3/install/point_lio/share/point_lio/hook/cmake_prefix_path.ps1'
+[0.846s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sentry-nov/code/colcon_3/install/point_lio/share/point_lio/hook/cmake_prefix_path.dsv'
+[0.847s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sentry-nov/code/colcon_3/install/point_lio/share/point_lio/hook/cmake_prefix_path.sh'
+[0.848s] Level 1:colcon.colcon_core.environment:checking '/home/sentry-nov/code/colcon_3/install/point_lio/lib'
+[0.849s] Level 1:colcon.colcon_core.environment:checking '/home/sentry-nov/code/colcon_3/install/point_lio/bin'
+[0.849s] Level 1:colcon.colcon_core.environment:checking '/home/sentry-nov/code/colcon_3/install/point_lio/lib/pkgconfig/point_lio.pc'
+[0.849s] Level 1:colcon.colcon_core.environment:checking '/home/sentry-nov/code/colcon_3/install/point_lio/lib/python3.10/site-packages'
+[0.849s] Level 1:colcon.colcon_core.environment:checking '/home/sentry-nov/code/colcon_3/install/point_lio/bin'
+[0.850s] INFO:colcon.colcon_core.shell:Creating package script '/home/sentry-nov/code/colcon_3/install/point_lio/share/point_lio/package.ps1'
+[0.851s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/sentry-nov/code/colcon_3/install/point_lio/share/point_lio/package.dsv'
+[0.852s] INFO:colcon.colcon_core.shell:Creating package script '/home/sentry-nov/code/colcon_3/install/point_lio/share/point_lio/package.sh'
+[0.853s] INFO:colcon.colcon_core.shell:Creating package script '/home/sentry-nov/code/colcon_3/install/point_lio/share/point_lio/package.bash'
+[0.855s] INFO:colcon.colcon_core.shell:Creating package script '/home/sentry-nov/code/colcon_3/install/point_lio/share/point_lio/package.zsh'
+[0.855s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/sentry-nov/code/colcon_3/install/point_lio/share/colcon-core/packages/point_lio)
+[1.105s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sentry-nov/code/colcon_3/build/fast_lio' returned '0': CMAKE_PREFIX_PATH=/home/sentry-nov/code/colcon_3/install/livox_ros_driver2:/home/sentry-nov/code/colcon_3/install/debug_tools:/home/sentry-nov/code/colcon_3/install/tilted_lidar:/home/sentry-nov/code/colcon_3/install/rviz_plugin:/home/sentry-nov/code/colcon_3/install/robot_decision_system:/home/sentry-nov/code/colcon_3/install/rm_serial:/home/sentry-nov/code/colcon_3/install/rm_decision:/home/sentry-nov/code/colcon_3/install/motion_planning:/home/sentry-nov/code/colcon_3/install/path_planning:/home/sentry-nov/code/colcon_3/install/path_motion_planning:/home/sentry-nov/code/colcon_3/install/ikd_tree_mapping:/home/sentry-nov/code/colcon_3/install/rm_interface:/home/sentry-nov/code/colcon_3/install/point_lio:/home/sentry-nov/code/colcon_3/install/m_detector:/home/sentry-nov/code/colcon_3/install/fast_lio:/home/sentry-nov/code/colcon_3/install/icp_relocalization:/home/sentry-nov/code/colcon_3/install/altitude_map:/home/sentry-nov/code/colcon_3/install/auto_start:/opt/ros/humble LD_LIBRARY_PATH=/home/sentry-nov/code/colcon_3/install/livox_ros_driver2/lib:/home/sentry-nov/code/colcon_3/install/robot_decision_system/lib:/home/sentry-nov/code/colcon_3/install/path_planning/lib:/home/sentry-nov/code/colcon_3/install/path_motion_planning/lib:/home/sentry-nov/code/colcon_3/install/rm_interface/lib:/home/sentry-nov/code/colcon_3/install/m_detector/lib:/home/sentry-nov/code/colcon_3/install/fast_lio/lib:/home/sentry-nov/code/colcon_3/install/altitude_map/lib:/usr/local/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/sentry-nov/code/colcon_3/build/fast_lio -- -j12 -l12
+[1.109s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sentry-nov/code/colcon_3/build/fast_lio': CMAKE_PREFIX_PATH=/home/sentry-nov/code/colcon_3/install/livox_ros_driver2:/home/sentry-nov/code/colcon_3/install/debug_tools:/home/sentry-nov/code/colcon_3/install/tilted_lidar:/home/sentry-nov/code/colcon_3/install/rviz_plugin:/home/sentry-nov/code/colcon_3/install/robot_decision_system:/home/sentry-nov/code/colcon_3/install/rm_serial:/home/sentry-nov/code/colcon_3/install/rm_decision:/home/sentry-nov/code/colcon_3/install/motion_planning:/home/sentry-nov/code/colcon_3/install/path_planning:/home/sentry-nov/code/colcon_3/install/path_motion_planning:/home/sentry-nov/code/colcon_3/install/ikd_tree_mapping:/home/sentry-nov/code/colcon_3/install/rm_interface:/home/sentry-nov/code/colcon_3/install/point_lio:/home/sentry-nov/code/colcon_3/install/m_detector:/home/sentry-nov/code/colcon_3/install/fast_lio:/home/sentry-nov/code/colcon_3/install/icp_relocalization:/home/sentry-nov/code/colcon_3/install/altitude_map:/home/sentry-nov/code/colcon_3/install/auto_start:/opt/ros/humble LD_LIBRARY_PATH=/home/sentry-nov/code/colcon_3/install/livox_ros_driver2/lib:/home/sentry-nov/code/colcon_3/install/robot_decision_system/lib:/home/sentry-nov/code/colcon_3/install/path_planning/lib:/home/sentry-nov/code/colcon_3/install/path_motion_planning/lib:/home/sentry-nov/code/colcon_3/install/rm_interface/lib:/home/sentry-nov/code/colcon_3/install/m_detector/lib:/home/sentry-nov/code/colcon_3/install/fast_lio/lib:/home/sentry-nov/code/colcon_3/install/altitude_map/lib:/usr/local/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/sentry-nov/code/colcon_3/build/fast_lio
+[1.209s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(fast_lio)
+[1.209s] Level 1:colcon.colcon_core.environment:checking '/home/sentry-nov/code/colcon_3/install/fast_lio' for CMake module files
+[1.210s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sentry-nov/code/colcon_3/build/fast_lio' returned '0': CMAKE_PREFIX_PATH=/home/sentry-nov/code/colcon_3/install/livox_ros_driver2:/home/sentry-nov/code/colcon_3/install/debug_tools:/home/sentry-nov/code/colcon_3/install/tilted_lidar:/home/sentry-nov/code/colcon_3/install/rviz_plugin:/home/sentry-nov/code/colcon_3/install/robot_decision_system:/home/sentry-nov/code/colcon_3/install/rm_serial:/home/sentry-nov/code/colcon_3/install/rm_decision:/home/sentry-nov/code/colcon_3/install/motion_planning:/home/sentry-nov/code/colcon_3/install/path_planning:/home/sentry-nov/code/colcon_3/install/path_motion_planning:/home/sentry-nov/code/colcon_3/install/ikd_tree_mapping:/home/sentry-nov/code/colcon_3/install/rm_interface:/home/sentry-nov/code/colcon_3/install/point_lio:/home/sentry-nov/code/colcon_3/install/m_detector:/home/sentry-nov/code/colcon_3/install/fast_lio:/home/sentry-nov/code/colcon_3/install/icp_relocalization:/home/sentry-nov/code/colcon_3/install/altitude_map:/home/sentry-nov/code/colcon_3/install/auto_start:/opt/ros/humble LD_LIBRARY_PATH=/home/sentry-nov/code/colcon_3/install/livox_ros_driver2/lib:/home/sentry-nov/code/colcon_3/install/robot_decision_system/lib:/home/sentry-nov/code/colcon_3/install/path_planning/lib:/home/sentry-nov/code/colcon_3/install/path_motion_planning/lib:/home/sentry-nov/code/colcon_3/install/rm_interface/lib:/home/sentry-nov/code/colcon_3/install/m_detector/lib:/home/sentry-nov/code/colcon_3/install/fast_lio/lib:/home/sentry-nov/code/colcon_3/install/altitude_map/lib:/usr/local/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/sentry-nov/code/colcon_3/build/fast_lio
+[1.210s] Level 1:colcon.colcon_core.environment:checking '/home/sentry-nov/code/colcon_3/install/fast_lio' for CMake config files
+[1.211s] Level 1:colcon.colcon_core.shell:create_environment_hook('fast_lio', 'cmake_prefix_path')
+[1.211s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sentry-nov/code/colcon_3/install/fast_lio/share/fast_lio/hook/cmake_prefix_path.ps1'
+[1.212s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sentry-nov/code/colcon_3/install/fast_lio/share/fast_lio/hook/cmake_prefix_path.dsv'
+[1.213s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sentry-nov/code/colcon_3/install/fast_lio/share/fast_lio/hook/cmake_prefix_path.sh'
+[1.213s] Level 1:colcon.colcon_core.environment:checking '/home/sentry-nov/code/colcon_3/install/fast_lio/lib'
+[1.213s] Level 1:colcon.colcon_core.shell:create_environment_hook('fast_lio', 'ld_library_path_lib')
+[1.214s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sentry-nov/code/colcon_3/install/fast_lio/share/fast_lio/hook/ld_library_path_lib.ps1'
+[1.214s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sentry-nov/code/colcon_3/install/fast_lio/share/fast_lio/hook/ld_library_path_lib.dsv'
+[1.215s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sentry-nov/code/colcon_3/install/fast_lio/share/fast_lio/hook/ld_library_path_lib.sh'
+[1.215s] Level 1:colcon.colcon_core.environment:checking '/home/sentry-nov/code/colcon_3/install/fast_lio/bin'
+[1.215s] Level 1:colcon.colcon_core.environment:checking '/home/sentry-nov/code/colcon_3/install/fast_lio/lib/pkgconfig/fast_lio.pc'
+[1.216s] Level 1:colcon.colcon_core.environment:checking '/home/sentry-nov/code/colcon_3/install/fast_lio/lib/python3.10/site-packages'
+[1.216s] Level 1:colcon.colcon_core.environment:checking '/home/sentry-nov/code/colcon_3/install/fast_lio/bin'
+[1.216s] INFO:colcon.colcon_core.shell:Creating package script '/home/sentry-nov/code/colcon_3/install/fast_lio/share/fast_lio/package.ps1'
+[1.217s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/sentry-nov/code/colcon_3/install/fast_lio/share/fast_lio/package.dsv'
+[1.218s] INFO:colcon.colcon_core.shell:Creating package script '/home/sentry-nov/code/colcon_3/install/fast_lio/share/fast_lio/package.sh'
+[1.219s] INFO:colcon.colcon_core.shell:Creating package script '/home/sentry-nov/code/colcon_3/install/fast_lio/share/fast_lio/package.bash'
+[1.219s] INFO:colcon.colcon_core.shell:Creating package script '/home/sentry-nov/code/colcon_3/install/fast_lio/share/fast_lio/package.zsh'
+[1.220s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/sentry-nov/code/colcon_3/install/fast_lio/share/colcon-core/packages/fast_lio)
+[1.221s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(fast_lio)
+[1.222s] Level 1:colcon.colcon_core.environment:checking '/home/sentry-nov/code/colcon_3/install/fast_lio' for CMake module files
+[1.222s] Level 1:colcon.colcon_core.environment:checking '/home/sentry-nov/code/colcon_3/install/fast_lio' for CMake config files
+[1.223s] Level 1:colcon.colcon_core.shell:create_environment_hook('fast_lio', 'cmake_prefix_path')
+[1.223s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sentry-nov/code/colcon_3/install/fast_lio/share/fast_lio/hook/cmake_prefix_path.ps1'
+[1.224s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sentry-nov/code/colcon_3/install/fast_lio/share/fast_lio/hook/cmake_prefix_path.dsv'
+[1.225s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sentry-nov/code/colcon_3/install/fast_lio/share/fast_lio/hook/cmake_prefix_path.sh'
+[1.226s] Level 1:colcon.colcon_core.environment:checking '/home/sentry-nov/code/colcon_3/install/fast_lio/lib'
+[1.226s] Level 1:colcon.colcon_core.shell:create_environment_hook('fast_lio', 'ld_library_path_lib')
+[1.226s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sentry-nov/code/colcon_3/install/fast_lio/share/fast_lio/hook/ld_library_path_lib.ps1'
+[1.227s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sentry-nov/code/colcon_3/install/fast_lio/share/fast_lio/hook/ld_library_path_lib.dsv'
+[1.228s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sentry-nov/code/colcon_3/install/fast_lio/share/fast_lio/hook/ld_library_path_lib.sh'
+[1.228s] Level 1:colcon.colcon_core.environment:checking '/home/sentry-nov/code/colcon_3/install/fast_lio/bin'
+[1.228s] Level 1:colcon.colcon_core.environment:checking '/home/sentry-nov/code/colcon_3/install/fast_lio/lib/pkgconfig/fast_lio.pc'
+[1.229s] Level 1:colcon.colcon_core.environment:checking '/home/sentry-nov/code/colcon_3/install/fast_lio/lib/python3.10/site-packages'
+[1.229s] Level 1:colcon.colcon_core.environment:checking '/home/sentry-nov/code/colcon_3/install/fast_lio/bin'
+[1.229s] INFO:colcon.colcon_core.shell:Creating package script '/home/sentry-nov/code/colcon_3/install/fast_lio/share/fast_lio/package.ps1'
+[1.230s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/sentry-nov/code/colcon_3/install/fast_lio/share/fast_lio/package.dsv'
+[1.231s] INFO:colcon.colcon_core.shell:Creating package script '/home/sentry-nov/code/colcon_3/install/fast_lio/share/fast_lio/package.sh'
+[1.232s] INFO:colcon.colcon_core.shell:Creating package script '/home/sentry-nov/code/colcon_3/install/fast_lio/share/fast_lio/package.bash'
+[1.233s] INFO:colcon.colcon_core.shell:Creating package script '/home/sentry-nov/code/colcon_3/install/fast_lio/share/fast_lio/package.zsh'
+[1.233s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/sentry-nov/code/colcon_3/install/fast_lio/share/colcon-core/packages/fast_lio)
+[27.069s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sentry-nov/code/colcon_3/build/rm_decision' returned '0': CMAKE_PREFIX_PATH=/home/sentry-nov/code/colcon_3/install/rm_interface:/home/sentry-nov/code/colcon_3/install/debug_tools:/home/sentry-nov/code/colcon_3/install/tilted_lidar:/home/sentry-nov/code/colcon_3/install/rviz_plugin:/home/sentry-nov/code/colcon_3/install/robot_decision_system:/home/sentry-nov/code/colcon_3/install/rm_serial:/home/sentry-nov/code/colcon_3/install/rm_decision:/home/sentry-nov/code/colcon_3/install/motion_planning:/home/sentry-nov/code/colcon_3/install/path_planning:/home/sentry-nov/code/colcon_3/install/path_motion_planning:/home/sentry-nov/code/colcon_3/install/ikd_tree_mapping:/home/sentry-nov/code/colcon_3/install/point_lio:/home/sentry-nov/code/colcon_3/install/m_detector:/home/sentry-nov/code/colcon_3/install/fast_lio:/home/sentry-nov/code/colcon_3/install/livox_ros_driver2:/home/sentry-nov/code/colcon_3/install/icp_relocalization:/home/sentry-nov/code/colcon_3/install/altitude_map:/home/sentry-nov/code/colcon_3/install/auto_start:/opt/ros/humble LD_LIBRARY_PATH=/home/sentry-nov/code/colcon_3/install/rm_interface/lib:/home/sentry-nov/code/colcon_3/install/robot_decision_system/lib:/home/sentry-nov/code/colcon_3/install/path_planning/lib:/home/sentry-nov/code/colcon_3/install/path_motion_planning/lib:/home/sentry-nov/code/colcon_3/install/m_detector/lib:/home/sentry-nov/code/colcon_3/install/fast_lio/lib:/home/sentry-nov/code/colcon_3/install/livox_ros_driver2/lib:/home/sentry-nov/code/colcon_3/install/altitude_map/lib:/usr/local/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/sentry-nov/code/colcon_3/build/rm_decision -- -j12 -l12
+[27.073s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sentry-nov/code/colcon_3/build/rm_decision': CMAKE_PREFIX_PATH=/home/sentry-nov/code/colcon_3/install/rm_interface:/home/sentry-nov/code/colcon_3/install/debug_tools:/home/sentry-nov/code/colcon_3/install/tilted_lidar:/home/sentry-nov/code/colcon_3/install/rviz_plugin:/home/sentry-nov/code/colcon_3/install/robot_decision_system:/home/sentry-nov/code/colcon_3/install/rm_serial:/home/sentry-nov/code/colcon_3/install/rm_decision:/home/sentry-nov/code/colcon_3/install/motion_planning:/home/sentry-nov/code/colcon_3/install/path_planning:/home/sentry-nov/code/colcon_3/install/path_motion_planning:/home/sentry-nov/code/colcon_3/install/ikd_tree_mapping:/home/sentry-nov/code/colcon_3/install/point_lio:/home/sentry-nov/code/colcon_3/install/m_detector:/home/sentry-nov/code/colcon_3/install/fast_lio:/home/sentry-nov/code/colcon_3/install/livox_ros_driver2:/home/sentry-nov/code/colcon_3/install/icp_relocalization:/home/sentry-nov/code/colcon_3/install/altitude_map:/home/sentry-nov/code/colcon_3/install/auto_start:/opt/ros/humble LD_LIBRARY_PATH=/home/sentry-nov/code/colcon_3/install/rm_interface/lib:/home/sentry-nov/code/colcon_3/install/robot_decision_system/lib:/home/sentry-nov/code/colcon_3/install/path_planning/lib:/home/sentry-nov/code/colcon_3/install/path_motion_planning/lib:/home/sentry-nov/code/colcon_3/install/m_detector/lib:/home/sentry-nov/code/colcon_3/install/fast_lio/lib:/home/sentry-nov/code/colcon_3/install/livox_ros_driver2/lib:/home/sentry-nov/code/colcon_3/install/altitude_map/lib:/usr/local/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/sentry-nov/code/colcon_3/build/rm_decision
+[27.093s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rm_decision)
+[27.094s] Level 1:colcon.colcon_core.environment:checking '/home/sentry-nov/code/colcon_3/install/rm_decision' for CMake module files
+[27.094s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sentry-nov/code/colcon_3/build/rm_decision' returned '0': CMAKE_PREFIX_PATH=/home/sentry-nov/code/colcon_3/install/rm_interface:/home/sentry-nov/code/colcon_3/install/debug_tools:/home/sentry-nov/code/colcon_3/install/tilted_lidar:/home/sentry-nov/code/colcon_3/install/rviz_plugin:/home/sentry-nov/code/colcon_3/install/robot_decision_system:/home/sentry-nov/code/colcon_3/install/rm_serial:/home/sentry-nov/code/colcon_3/install/rm_decision:/home/sentry-nov/code/colcon_3/install/motion_planning:/home/sentry-nov/code/colcon_3/install/path_planning:/home/sentry-nov/code/colcon_3/install/path_motion_planning:/home/sentry-nov/code/colcon_3/install/ikd_tree_mapping:/home/sentry-nov/code/colcon_3/install/point_lio:/home/sentry-nov/code/colcon_3/install/m_detector:/home/sentry-nov/code/colcon_3/install/fast_lio:/home/sentry-nov/code/colcon_3/install/livox_ros_driver2:/home/sentry-nov/code/colcon_3/install/icp_relocalization:/home/sentry-nov/code/colcon_3/install/altitude_map:/home/sentry-nov/code/colcon_3/install/auto_start:/opt/ros/humble LD_LIBRARY_PATH=/home/sentry-nov/code/colcon_3/install/rm_interface/lib:/home/sentry-nov/code/colcon_3/install/robot_decision_system/lib:/home/sentry-nov/code/colcon_3/install/path_planning/lib:/home/sentry-nov/code/colcon_3/install/path_motion_planning/lib:/home/sentry-nov/code/colcon_3/install/m_detector/lib:/home/sentry-nov/code/colcon_3/install/fast_lio/lib:/home/sentry-nov/code/colcon_3/install/livox_ros_driver2/lib:/home/sentry-nov/code/colcon_3/install/altitude_map/lib:/usr/local/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/sentry-nov/code/colcon_3/build/rm_decision
+[27.094s] Level 1:colcon.colcon_core.environment:checking '/home/sentry-nov/code/colcon_3/install/rm_decision' for CMake config files
+[27.094s] Level 1:colcon.colcon_core.shell:create_environment_hook('rm_decision', 'cmake_prefix_path')
+[27.095s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sentry-nov/code/colcon_3/install/rm_decision/share/rm_decision/hook/cmake_prefix_path.ps1'
+[27.095s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sentry-nov/code/colcon_3/install/rm_decision/share/rm_decision/hook/cmake_prefix_path.dsv'
+[27.095s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sentry-nov/code/colcon_3/install/rm_decision/share/rm_decision/hook/cmake_prefix_path.sh'
+[27.096s] Level 1:colcon.colcon_core.environment:checking '/home/sentry-nov/code/colcon_3/install/rm_decision/lib'
+[27.096s] Level 1:colcon.colcon_core.environment:checking '/home/sentry-nov/code/colcon_3/install/rm_decision/bin'
+[27.096s] Level 1:colcon.colcon_core.environment:checking '/home/sentry-nov/code/colcon_3/install/rm_decision/lib/pkgconfig/rm_decision.pc'
+[27.096s] Level 1:colcon.colcon_core.environment:checking '/home/sentry-nov/code/colcon_3/install/rm_decision/lib/python3.10/site-packages'
+[27.096s] Level 1:colcon.colcon_core.environment:checking '/home/sentry-nov/code/colcon_3/install/rm_decision/bin'
+[27.097s] INFO:colcon.colcon_core.shell:Creating package script '/home/sentry-nov/code/colcon_3/install/rm_decision/share/rm_decision/package.ps1'
+[27.097s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/sentry-nov/code/colcon_3/install/rm_decision/share/rm_decision/package.dsv'
+[27.098s] INFO:colcon.colcon_core.shell:Creating package script '/home/sentry-nov/code/colcon_3/install/rm_decision/share/rm_decision/package.sh'
+[27.098s] INFO:colcon.colcon_core.shell:Creating package script '/home/sentry-nov/code/colcon_3/install/rm_decision/share/rm_decision/package.bash'
+[27.098s] INFO:colcon.colcon_core.shell:Creating package script '/home/sentry-nov/code/colcon_3/install/rm_decision/share/rm_decision/package.zsh'
+[27.099s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/sentry-nov/code/colcon_3/install/rm_decision/share/colcon-core/packages/rm_decision)
+[27.099s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rm_decision)
+[27.099s] Level 1:colcon.colcon_core.environment:checking '/home/sentry-nov/code/colcon_3/install/rm_decision' for CMake module files
+[27.100s] Level 1:colcon.colcon_core.environment:checking '/home/sentry-nov/code/colcon_3/install/rm_decision' for CMake config files
+[27.100s] Level 1:colcon.colcon_core.shell:create_environment_hook('rm_decision', 'cmake_prefix_path')
+[27.100s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sentry-nov/code/colcon_3/install/rm_decision/share/rm_decision/hook/cmake_prefix_path.ps1'
+[27.100s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sentry-nov/code/colcon_3/install/rm_decision/share/rm_decision/hook/cmake_prefix_path.dsv'
+[27.101s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sentry-nov/code/colcon_3/install/rm_decision/share/rm_decision/hook/cmake_prefix_path.sh'
+[27.101s] Level 1:colcon.colcon_core.environment:checking '/home/sentry-nov/code/colcon_3/install/rm_decision/lib'
+[27.101s] Level 1:colcon.colcon_core.environment:checking '/home/sentry-nov/code/colcon_3/install/rm_decision/bin'
+[27.102s] Level 1:colcon.colcon_core.environment:checking '/home/sentry-nov/code/colcon_3/install/rm_decision/lib/pkgconfig/rm_decision.pc'
+[27.102s] Level 1:colcon.colcon_core.environment:checking '/home/sentry-nov/code/colcon_3/install/rm_decision/lib/python3.10/site-packages'
+[27.102s] Level 1:colcon.colcon_core.environment:checking '/home/sentry-nov/code/colcon_3/install/rm_decision/bin'
+[27.103s] INFO:colcon.colcon_core.shell:Creating package script '/home/sentry-nov/code/colcon_3/install/rm_decision/share/rm_decision/package.ps1'
+[27.104s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/sentry-nov/code/colcon_3/install/rm_decision/share/rm_decision/package.dsv'
+[27.105s] INFO:colcon.colcon_core.shell:Creating package script '/home/sentry-nov/code/colcon_3/install/rm_decision/share/rm_decision/package.sh'
+[27.119s] INFO:colcon.colcon_core.shell:Creating package script '/home/sentry-nov/code/colcon_3/install/rm_decision/share/rm_decision/package.bash'
+[27.120s] INFO:colcon.colcon_core.shell:Creating package script '/home/sentry-nov/code/colcon_3/install/rm_decision/share/rm_decision/package.zsh'
+[27.121s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/sentry-nov/code/colcon_3/install/rm_decision/share/colcon-core/packages/rm_decision)
+[36.616s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sentry-nov/code/colcon_3/build/path_motion_planning' returned '0': CMAKE_PREFIX_PATH=/home/sentry-nov/code/colcon_3/install/rm_interface:/home/sentry-nov/code/colcon_3/install/debug_tools:/home/sentry-nov/code/colcon_3/install/tilted_lidar:/home/sentry-nov/code/colcon_3/install/rviz_plugin:/home/sentry-nov/code/colcon_3/install/robot_decision_system:/home/sentry-nov/code/colcon_3/install/rm_serial:/home/sentry-nov/code/colcon_3/install/rm_decision:/home/sentry-nov/code/colcon_3/install/motion_planning:/home/sentry-nov/code/colcon_3/install/path_planning:/home/sentry-nov/code/colcon_3/install/path_motion_planning:/home/sentry-nov/code/colcon_3/install/ikd_tree_mapping:/home/sentry-nov/code/colcon_3/install/point_lio:/home/sentry-nov/code/colcon_3/install/m_detector:/home/sentry-nov/code/colcon_3/install/fast_lio:/home/sentry-nov/code/colcon_3/install/livox_ros_driver2:/home/sentry-nov/code/colcon_3/install/icp_relocalization:/home/sentry-nov/code/colcon_3/install/altitude_map:/home/sentry-nov/code/colcon_3/install/auto_start:/opt/ros/humble LD_LIBRARY_PATH=/home/sentry-nov/code/colcon_3/install/rm_interface/lib:/home/sentry-nov/code/colcon_3/install/robot_decision_system/lib:/home/sentry-nov/code/colcon_3/install/path_planning/lib:/home/sentry-nov/code/colcon_3/install/path_motion_planning/lib:/home/sentry-nov/code/colcon_3/install/m_detector/lib:/home/sentry-nov/code/colcon_3/install/fast_lio/lib:/home/sentry-nov/code/colcon_3/install/livox_ros_driver2/lib:/home/sentry-nov/code/colcon_3/install/altitude_map/lib:/usr/local/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/sentry-nov/code/colcon_3/build/path_motion_planning -- -j12 -l12
+[36.620s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sentry-nov/code/colcon_3/build/path_motion_planning': CMAKE_PREFIX_PATH=/home/sentry-nov/code/colcon_3/install/rm_interface:/home/sentry-nov/code/colcon_3/install/debug_tools:/home/sentry-nov/code/colcon_3/install/tilted_lidar:/home/sentry-nov/code/colcon_3/install/rviz_plugin:/home/sentry-nov/code/colcon_3/install/robot_decision_system:/home/sentry-nov/code/colcon_3/install/rm_serial:/home/sentry-nov/code/colcon_3/install/rm_decision:/home/sentry-nov/code/colcon_3/install/motion_planning:/home/sentry-nov/code/colcon_3/install/path_planning:/home/sentry-nov/code/colcon_3/install/path_motion_planning:/home/sentry-nov/code/colcon_3/install/ikd_tree_mapping:/home/sentry-nov/code/colcon_3/install/point_lio:/home/sentry-nov/code/colcon_3/install/m_detector:/home/sentry-nov/code/colcon_3/install/fast_lio:/home/sentry-nov/code/colcon_3/install/livox_ros_driver2:/home/sentry-nov/code/colcon_3/install/icp_relocalization:/home/sentry-nov/code/colcon_3/install/altitude_map:/home/sentry-nov/code/colcon_3/install/auto_start:/opt/ros/humble LD_LIBRARY_PATH=/home/sentry-nov/code/colcon_3/install/rm_interface/lib:/home/sentry-nov/code/colcon_3/install/robot_decision_system/lib:/home/sentry-nov/code/colcon_3/install/path_planning/lib:/home/sentry-nov/code/colcon_3/install/path_motion_planning/lib:/home/sentry-nov/code/colcon_3/install/m_detector/lib:/home/sentry-nov/code/colcon_3/install/fast_lio/lib:/home/sentry-nov/code/colcon_3/install/livox_ros_driver2/lib:/home/sentry-nov/code/colcon_3/install/altitude_map/lib:/usr/local/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/sentry-nov/code/colcon_3/build/path_motion_planning
+[36.658s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(path_motion_planning)
+[36.658s] Level 1:colcon.colcon_core.environment:checking '/home/sentry-nov/code/colcon_3/install/path_motion_planning' for CMake module files
+[36.658s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sentry-nov/code/colcon_3/build/path_motion_planning' returned '0': CMAKE_PREFIX_PATH=/home/sentry-nov/code/colcon_3/install/rm_interface:/home/sentry-nov/code/colcon_3/install/debug_tools:/home/sentry-nov/code/colcon_3/install/tilted_lidar:/home/sentry-nov/code/colcon_3/install/rviz_plugin:/home/sentry-nov/code/colcon_3/install/robot_decision_system:/home/sentry-nov/code/colcon_3/install/rm_serial:/home/sentry-nov/code/colcon_3/install/rm_decision:/home/sentry-nov/code/colcon_3/install/motion_planning:/home/sentry-nov/code/colcon_3/install/path_planning:/home/sentry-nov/code/colcon_3/install/path_motion_planning:/home/sentry-nov/code/colcon_3/install/ikd_tree_mapping:/home/sentry-nov/code/colcon_3/install/point_lio:/home/sentry-nov/code/colcon_3/install/m_detector:/home/sentry-nov/code/colcon_3/install/fast_lio:/home/sentry-nov/code/colcon_3/install/livox_ros_driver2:/home/sentry-nov/code/colcon_3/install/icp_relocalization:/home/sentry-nov/code/colcon_3/install/altitude_map:/home/sentry-nov/code/colcon_3/install/auto_start:/opt/ros/humble LD_LIBRARY_PATH=/home/sentry-nov/code/colcon_3/install/rm_interface/lib:/home/sentry-nov/code/colcon_3/install/robot_decision_system/lib:/home/sentry-nov/code/colcon_3/install/path_planning/lib:/home/sentry-nov/code/colcon_3/install/path_motion_planning/lib:/home/sentry-nov/code/colcon_3/install/m_detector/lib:/home/sentry-nov/code/colcon_3/install/fast_lio/lib:/home/sentry-nov/code/colcon_3/install/livox_ros_driver2/lib:/home/sentry-nov/code/colcon_3/install/altitude_map/lib:/usr/local/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/sentry-nov/code/colcon_3/build/path_motion_planning
+[36.659s] Level 1:colcon.colcon_core.environment:checking '/home/sentry-nov/code/colcon_3/install/path_motion_planning' for CMake config files
+[36.659s] Level 1:colcon.colcon_core.shell:create_environment_hook('path_motion_planning', 'cmake_prefix_path')
+[36.659s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sentry-nov/code/colcon_3/install/path_motion_planning/share/path_motion_planning/hook/cmake_prefix_path.ps1'
+[36.660s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sentry-nov/code/colcon_3/install/path_motion_planning/share/path_motion_planning/hook/cmake_prefix_path.dsv'
+[36.660s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sentry-nov/code/colcon_3/install/path_motion_planning/share/path_motion_planning/hook/cmake_prefix_path.sh'
+[36.661s] Level 1:colcon.colcon_core.environment:checking '/home/sentry-nov/code/colcon_3/install/path_motion_planning/lib'
+[36.661s] Level 1:colcon.colcon_core.shell:create_environment_hook('path_motion_planning', 'ld_library_path_lib')
+[36.661s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sentry-nov/code/colcon_3/install/path_motion_planning/share/path_motion_planning/hook/ld_library_path_lib.ps1'
+[36.661s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sentry-nov/code/colcon_3/install/path_motion_planning/share/path_motion_planning/hook/ld_library_path_lib.dsv'
+[36.661s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sentry-nov/code/colcon_3/install/path_motion_planning/share/path_motion_planning/hook/ld_library_path_lib.sh'
+[36.662s] Level 1:colcon.colcon_core.environment:checking '/home/sentry-nov/code/colcon_3/install/path_motion_planning/bin'
+[36.662s] Level 1:colcon.colcon_core.environment:checking '/home/sentry-nov/code/colcon_3/install/path_motion_planning/lib/pkgconfig/path_motion_planning.pc'
+[36.662s] Level 1:colcon.colcon_core.environment:checking '/home/sentry-nov/code/colcon_3/install/path_motion_planning/lib/python3.10/site-packages'
+[36.662s] Level 1:colcon.colcon_core.environment:checking '/home/sentry-nov/code/colcon_3/install/path_motion_planning/bin'
+[36.663s] INFO:colcon.colcon_core.shell:Creating package script '/home/sentry-nov/code/colcon_3/install/path_motion_planning/share/path_motion_planning/package.ps1'
+[36.663s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/sentry-nov/code/colcon_3/install/path_motion_planning/share/path_motion_planning/package.dsv'
+[36.664s] INFO:colcon.colcon_core.shell:Creating package script '/home/sentry-nov/code/colcon_3/install/path_motion_planning/share/path_motion_planning/package.sh'
+[36.664s] INFO:colcon.colcon_core.shell:Creating package script '/home/sentry-nov/code/colcon_3/install/path_motion_planning/share/path_motion_planning/package.bash'
+[36.664s] INFO:colcon.colcon_core.shell:Creating package script '/home/sentry-nov/code/colcon_3/install/path_motion_planning/share/path_motion_planning/package.zsh'
+[36.665s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/sentry-nov/code/colcon_3/install/path_motion_planning/share/colcon-core/packages/path_motion_planning)
+[36.665s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(path_motion_planning)
+[36.665s] Level 1:colcon.colcon_core.environment:checking '/home/sentry-nov/code/colcon_3/install/path_motion_planning' for CMake module files
+[36.666s] Level 1:colcon.colcon_core.environment:checking '/home/sentry-nov/code/colcon_3/install/path_motion_planning' for CMake config files
+[36.666s] Level 1:colcon.colcon_core.shell:create_environment_hook('path_motion_planning', 'cmake_prefix_path')
+[36.666s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sentry-nov/code/colcon_3/install/path_motion_planning/share/path_motion_planning/hook/cmake_prefix_path.ps1'
+[36.667s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sentry-nov/code/colcon_3/install/path_motion_planning/share/path_motion_planning/hook/cmake_prefix_path.dsv'
+[36.667s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sentry-nov/code/colcon_3/install/path_motion_planning/share/path_motion_planning/hook/cmake_prefix_path.sh'
+[36.668s] Level 1:colcon.colcon_core.environment:checking '/home/sentry-nov/code/colcon_3/install/path_motion_planning/lib'
+[36.668s] Level 1:colcon.colcon_core.shell:create_environment_hook('path_motion_planning', 'ld_library_path_lib')
+[36.668s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sentry-nov/code/colcon_3/install/path_motion_planning/share/path_motion_planning/hook/ld_library_path_lib.ps1'
+[36.670s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sentry-nov/code/colcon_3/install/path_motion_planning/share/path_motion_planning/hook/ld_library_path_lib.dsv'
+[36.670s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sentry-nov/code/colcon_3/install/path_motion_planning/share/path_motion_planning/hook/ld_library_path_lib.sh'
+[36.671s] Level 1:colcon.colcon_core.environment:checking '/home/sentry-nov/code/colcon_3/install/path_motion_planning/bin'
+[36.671s] Level 1:colcon.colcon_core.environment:checking '/home/sentry-nov/code/colcon_3/install/path_motion_planning/lib/pkgconfig/path_motion_planning.pc'
+[36.671s] Level 1:colcon.colcon_core.environment:checking '/home/sentry-nov/code/colcon_3/install/path_motion_planning/lib/python3.10/site-packages'
+[36.672s] Level 1:colcon.colcon_core.environment:checking '/home/sentry-nov/code/colcon_3/install/path_motion_planning/bin'
+[36.672s] INFO:colcon.colcon_core.shell:Creating package script '/home/sentry-nov/code/colcon_3/install/path_motion_planning/share/path_motion_planning/package.ps1'
+[36.673s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/sentry-nov/code/colcon_3/install/path_motion_planning/share/path_motion_planning/package.dsv'
+[36.673s] INFO:colcon.colcon_core.shell:Creating package script '/home/sentry-nov/code/colcon_3/install/path_motion_planning/share/path_motion_planning/package.sh'
+[36.674s] INFO:colcon.colcon_core.shell:Creating package script '/home/sentry-nov/code/colcon_3/install/path_motion_planning/share/path_motion_planning/package.bash'
+[36.674s] INFO:colcon.colcon_core.shell:Creating package script '/home/sentry-nov/code/colcon_3/install/path_motion_planning/share/path_motion_planning/package.zsh'
+[36.674s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/sentry-nov/code/colcon_3/install/path_motion_planning/share/colcon-core/packages/path_motion_planning)
+[36.674s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[36.675s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[36.675s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[36.675s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[36.697s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[36.698s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[36.698s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[36.716s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[36.716s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/sentry-nov/code/colcon_3/install/local_setup.ps1'
+[36.723s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/sentry-nov/code/colcon_3/install/_local_setup_util_ps1.py'
+[36.728s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/sentry-nov/code/colcon_3/install/setup.ps1'
+[36.733s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/sentry-nov/code/colcon_3/install/local_setup.sh'
+[36.738s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/sentry-nov/code/colcon_3/install/_local_setup_util_sh.py'
+[36.739s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/sentry-nov/code/colcon_3/install/setup.sh'
+[36.746s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/sentry-nov/code/colcon_3/install/local_setup.bash'
+[36.751s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/sentry-nov/code/colcon_3/install/setup.bash'
+[36.756s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/sentry-nov/code/colcon_3/install/local_setup.zsh'
+[36.761s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/sentry-nov/code/colcon_3/install/setup.zsh'

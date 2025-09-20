@@ -1,0 +1,16 @@
+[01m[K/home/sentry-nov/code/colcon_3/src/common/rm_serial/src/rec_command.cpp:[m[K In member function ‘[01m[Kvoid rm_serial::RecCommand::readDataFromQueue()[m[K’:
+[01m[K/home/sentry-nov/code/colcon_3/src/common/rm_serial/src/rec_command.cpp:79:26:[m[K [01;31m[Kerror: [m[Kconflicting declaration ‘[01m[Kauto target_x[m[K’
+   79 |                     auto [01;31m[Ktarget_x[m[K = data_list_->getValue<uint16_t>(5);
+      |                          [01;31m[K^~~~~~~~[m[K
+[01m[K/home/sentry-nov/code/colcon_3/src/common/rm_serial/src/rec_command.cpp:75:26:[m[K [01;36m[Knote: [m[Kprevious declaration as ‘[01m[Kshort unsigned int target_x[m[K’
+   75 |                     auto [01;36m[Ktarget_x[m[K = data_list_->getValue<uint16_t>(1);
+      |                          [01;36m[K^~~~~~~~[m[K
+[01m[K/home/sentry-nov/code/colcon_3/src/common/rm_serial/src/rec_command.cpp:80:26:[m[K [01;31m[Kerror: [m[Kconflicting declaration ‘[01m[Kauto target_y[m[K’
+   80 |                     auto [01;31m[Ktarget_y[m[K = data_list_->getValue<uint8_t>(6);
+      |                          [01;31m[K^~~~~~~~[m[K
+[01m[K/home/sentry-nov/code/colcon_3/src/common/rm_serial/src/rec_command.cpp:76:26:[m[K [01;36m[Knote: [m[Kprevious declaration as ‘[01m[Kshort unsigned int target_y[m[K’
+   76 |                     auto [01;36m[Ktarget_y[m[K = data_list_->getValue<uint16_t>(2);
+      |                          [01;36m[K^~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/rm_serial_rec_command_node.dir/build.make:76: CMakeFiles/rm_serial_rec_command_node.dir/src/rec_command.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/rm_serial_rec_command_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

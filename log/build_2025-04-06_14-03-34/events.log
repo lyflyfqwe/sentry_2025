@@ -1,0 +1,738 @@
+[0.000000] (-) TimerEvent: {}
+[0.000233] (-) JobUnselected: {'identifier': 'debug_tools'}
+[0.000282] (-) JobUnselected: {'identifier': 'fast_lio'}
+[0.000334] (-) JobUnselected: {'identifier': 'icp_relocalization'}
+[0.000368] (-) JobUnselected: {'identifier': 'ikd_tree_mapping'}
+[0.000491] (-) JobUnselected: {'identifier': 'livox_ros_driver2'}
+[0.000547] (-) JobUnselected: {'identifier': 'm_detector'}
+[0.000585] (-) JobUnselected: {'identifier': 'motion_planning'}
+[0.000619] (-) JobUnselected: {'identifier': 'path_planning'}
+[0.000653] (-) JobUnselected: {'identifier': 'point_lio'}
+[0.000715] (-) JobUnselected: {'identifier': 'rm_decision'}
+[0.000749] (-) JobUnselected: {'identifier': 'rm_decision_system'}
+[0.000780] (-) JobUnselected: {'identifier': 'rm_serial'}
+[0.000841] (-) JobUnselected: {'identifier': 'rviz_plugin'}
+[0.000856] (-) JobUnselected: {'identifier': 'tilted_lidar'}
+[0.000878] (auto_start) JobQueued: {'identifier': 'auto_start', 'dependencies': OrderedDict()}
+[0.000936] (rm_interface) JobQueued: {'identifier': 'rm_interface', 'dependencies': OrderedDict()}
+[0.000952] (altitude_map) JobQueued: {'identifier': 'altitude_map', 'dependencies': OrderedDict([('debug_tools', '/home/sentry-nov/code/colcon_3/install/debug_tools')])}
+[0.000969] (path_motion_planning) JobQueued: {'identifier': 'path_motion_planning', 'dependencies': OrderedDict([('debug_tools', '/home/sentry-nov/code/colcon_3/install/debug_tools'), ('rm_interface', '/home/sentry-nov/code/colcon_3/install/rm_interface')])}
+[0.000992] (rm_interface) JobStarted: {'identifier': 'rm_interface'}
+[0.006575] (auto_start) JobStarted: {'identifier': 'auto_start'}
+[0.011744] (altitude_map) JobStarted: {'identifier': 'altitude_map'}
+[0.018005] (rm_interface) JobProgress: {'identifier': 'rm_interface', 'progress': 'cmake'}
+[0.018524] (rm_interface) JobProgress: {'identifier': 'rm_interface', 'progress': 'build'}
+[0.019049] (rm_interface) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/sentry-nov/code/colcon_3/build/rm_interface', '--', '-j12', '-l12'], 'cwd': '/home/sentry-nov/code/colcon_3/build/rm_interface', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LIBRARY_PATH', '/usr/local/lib:'), ('C_INCLUDE_PATH', '/usr/local/include:'), ('LANGUAGE', 'en_GB:en'), ('USER', 'sentry-nov'), ('LC_TIME', 'en_GB.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/sentry-nov/code/colcon_3/install/robot_decision_system/lib:/home/sentry-nov/code/colcon_3/install/rm_decision_system/lib:/home/sentry-nov/code/colcon_3/install/path_planning/lib:/home/sentry-nov/code/colcon_3/install/path_motion_planning/lib:/home/sentry-nov/code/colcon_3/install/rm_interface/lib:/home/sentry-nov/code/colcon_3/install/m_detector/lib:/home/sentry-nov/code/colcon_3/install/fast_lio/lib:/home/sentry-nov/code/colcon_3/install/livox_ros_driver2/lib:/home/sentry-nov/code/colcon_3/install/altitude_map/lib:/usr/local/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/sentry-nov'), ('OLDPWD', '/home/sentry-nov'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_GB.UTF-8'), ('SYSTEMD_EXEC_PID', '1388'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('CPLUS_INCLUDE_PATH', '/usr/local/include:'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/sentry-nov/code/colcon_3/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'sentry-nov'), ('_', '/usr/bin/python3'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'sentry-nov'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/sentry-nov:@/tmp/.ICE-unix/1369,unix/sentry-nov:/tmp/.ICE-unix/1369'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_GB.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/bdbbb5ae_a25f_47e7_8b0f_bd78a15f438b'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_GB.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_GB.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.100'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/sentry-nov/code/colcon_3/install/tilted_lidar:/home/sentry-nov/code/colcon_3/install/rviz_plugin:/home/sentry-nov/code/colcon_3/install/robot_decision_system:/home/sentry-nov/code/colcon_3/install/rm_serial:/home/sentry-nov/code/colcon_3/install/rm_decision_system:/home/sentry-nov/code/colcon_3/install/rm_decision:/home/sentry-nov/code/colcon_3/install/motion_planning:/home/sentry-nov/code/colcon_3/install/path_planning:/home/sentry-nov/code/colcon_3/install/path_motion_planning:/home/sentry-nov/code/colcon_3/install/ikd_tree_mapping:/home/sentry-nov/code/colcon_3/install/rm_interface:/home/sentry-nov/code/colcon_3/install/point_lio:/home/sentry-nov/code/colcon_3/install/m_detector:/home/sentry-nov/code/colcon_3/install/fast_lio:/home/sentry-nov/code/colcon_3/install/livox_ros_driver2:/home/sentry-nov/code/colcon_3/install/icp_relocalization:/home/sentry-nov/code/colcon_3/install/altitude_map:/home/sentry-nov/code/colcon_3/install/debug_tools:/home/sentry-nov/code/colcon_3/install/auto_start:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_GB.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_GB.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'en_GB.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/sentry-nov/code/colcon_3/build/rm_interface'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/sentry-nov/code/colcon_3/install/robot_decision_system/local/lib/python3.10/dist-packages:/home/sentry-nov/code/colcon_3/install/rm_decision_system/local/lib/python3.10/dist-packages:/home/sentry-nov/code/colcon_3/install/rm_interface/local/lib/python3.10/dist-packages:/home/sentry-nov/code/colcon_3/install/fast_lio/local/lib/python3.10/dist-packages:/home/sentry-nov/code/colcon_3/install/livox_ros_driver2/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_GB.UTF-8'), ('LC_PAPER', 'en_GB.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/sentry-nov/code/colcon_3/install/tilted_lidar:/home/sentry-nov/code/colcon_3/install/rviz_plugin:/home/sentry-nov/code/colcon_3/install/robot_decision_system:/home/sentry-nov/code/colcon_3/install/rm_serial:/home/sentry-nov/code/colcon_3/install/rm_decision_system:/home/sentry-nov/code/colcon_3/install/rm_decision:/home/sentry-nov/code/colcon_3/install/motion_planning:/home/sentry-nov/code/colcon_3/install/path_planning:/home/sentry-nov/code/colcon_3/install/path_motion_planning:/home/sentry-nov/code/colcon_3/install/ikd_tree_mapping:/home/sentry-nov/code/colcon_3/install/rm_interface:/home/sentry-nov/code/colcon_3/install/point_lio:/home/sentry-nov/code/colcon_3/install/m_detector:/home/sentry-nov/code/colcon_3/install/fast_lio:/home/sentry-nov/code/colcon_3/install/livox_ros_driver2:/home/sentry-nov/code/colcon_3/install/icp_relocalization:/home/sentry-nov/code/colcon_3/install/altitude_map:/home/sentry-nov/code/colcon_3/install/debug_tools:/home/sentry-nov/code/colcon_3/install/auto_start:/opt/ros/humble')]), 'shell': False}
+[0.022221] (auto_start) JobProgress: {'identifier': 'auto_start', 'progress': 'cmake'}
+[0.023916] (auto_start) JobProgress: {'identifier': 'auto_start', 'progress': 'build'}
+[0.024226] (auto_start) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/sentry-nov/code/colcon_3/build/auto_start', '--', '-j12', '-l12'], 'cwd': '/home/sentry-nov/code/colcon_3/build/auto_start', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LIBRARY_PATH', '/usr/local/lib:'), ('C_INCLUDE_PATH', '/usr/local/include:'), ('LANGUAGE', 'en_GB:en'), ('USER', 'sentry-nov'), ('LC_TIME', 'en_GB.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/sentry-nov/code/colcon_3/install/robot_decision_system/lib:/home/sentry-nov/code/colcon_3/install/rm_decision_system/lib:/home/sentry-nov/code/colcon_3/install/path_planning/lib:/home/sentry-nov/code/colcon_3/install/path_motion_planning/lib:/home/sentry-nov/code/colcon_3/install/rm_interface/lib:/home/sentry-nov/code/colcon_3/install/m_detector/lib:/home/sentry-nov/code/colcon_3/install/fast_lio/lib:/home/sentry-nov/code/colcon_3/install/livox_ros_driver2/lib:/home/sentry-nov/code/colcon_3/install/altitude_map/lib:/usr/local/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/sentry-nov'), ('OLDPWD', '/home/sentry-nov'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_GB.UTF-8'), ('SYSTEMD_EXEC_PID', '1388'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('CPLUS_INCLUDE_PATH', '/usr/local/include:'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/sentry-nov/code/colcon_3/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'sentry-nov'), ('_', '/usr/bin/python3'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'sentry-nov'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/sentry-nov:@/tmp/.ICE-unix/1369,unix/sentry-nov:/tmp/.ICE-unix/1369'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_GB.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/bdbbb5ae_a25f_47e7_8b0f_bd78a15f438b'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_GB.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_GB.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.100'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/sentry-nov/code/colcon_3/install/tilted_lidar:/home/sentry-nov/code/colcon_3/install/rviz_plugin:/home/sentry-nov/code/colcon_3/install/robot_decision_system:/home/sentry-nov/code/colcon_3/install/rm_serial:/home/sentry-nov/code/colcon_3/install/rm_decision_system:/home/sentry-nov/code/colcon_3/install/rm_decision:/home/sentry-nov/code/colcon_3/install/motion_planning:/home/sentry-nov/code/colcon_3/install/path_planning:/home/sentry-nov/code/colcon_3/install/path_motion_planning:/home/sentry-nov/code/colcon_3/install/ikd_tree_mapping:/home/sentry-nov/code/colcon_3/install/rm_interface:/home/sentry-nov/code/colcon_3/install/point_lio:/home/sentry-nov/code/colcon_3/install/m_detector:/home/sentry-nov/code/colcon_3/install/fast_lio:/home/sentry-nov/code/colcon_3/install/livox_ros_driver2:/home/sentry-nov/code/colcon_3/install/icp_relocalization:/home/sentry-nov/code/colcon_3/install/altitude_map:/home/sentry-nov/code/colcon_3/install/debug_tools:/home/sentry-nov/code/colcon_3/install/auto_start:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_GB.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_GB.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'en_GB.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/sentry-nov/code/colcon_3/build/auto_start'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/sentry-nov/code/colcon_3/install/robot_decision_system/local/lib/python3.10/dist-packages:/home/sentry-nov/code/colcon_3/install/rm_decision_system/local/lib/python3.10/dist-packages:/home/sentry-nov/code/colcon_3/install/rm_interface/local/lib/python3.10/dist-packages:/home/sentry-nov/code/colcon_3/install/fast_lio/local/lib/python3.10/dist-packages:/home/sentry-nov/code/colcon_3/install/livox_ros_driver2/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_GB.UTF-8'), ('LC_PAPER', 'en_GB.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/sentry-nov/code/colcon_3/install/tilted_lidar:/home/sentry-nov/code/colcon_3/install/rviz_plugin:/home/sentry-nov/code/colcon_3/install/robot_decision_system:/home/sentry-nov/code/colcon_3/install/rm_serial:/home/sentry-nov/code/colcon_3/install/rm_decision_system:/home/sentry-nov/code/colcon_3/install/rm_decision:/home/sentry-nov/code/colcon_3/install/motion_planning:/home/sentry-nov/code/colcon_3/install/path_planning:/home/sentry-nov/code/colcon_3/install/path_motion_planning:/home/sentry-nov/code/colcon_3/install/ikd_tree_mapping:/home/sentry-nov/code/colcon_3/install/rm_interface:/home/sentry-nov/code/colcon_3/install/point_lio:/home/sentry-nov/code/colcon_3/install/m_detector:/home/sentry-nov/code/colcon_3/install/fast_lio:/home/sentry-nov/code/colcon_3/install/livox_ros_driver2:/home/sentry-nov/code/colcon_3/install/icp_relocalization:/home/sentry-nov/code/colcon_3/install/altitude_map:/home/sentry-nov/code/colcon_3/install/debug_tools:/home/sentry-nov/code/colcon_3/install/auto_start:/opt/ros/humble')]), 'shell': False}
+[0.028034] (altitude_map) JobProgress: {'identifier': 'altitude_map', 'progress': 'cmake'}
+[0.028869] (altitude_map) JobProgress: {'identifier': 'altitude_map', 'progress': 'build'}
+[0.029193] (altitude_map) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/sentry-nov/code/colcon_3/build/altitude_map', '--', '-j12', '-l12'], 'cwd': '/home/sentry-nov/code/colcon_3/build/altitude_map', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LIBRARY_PATH', '/usr/local/lib:'), ('C_INCLUDE_PATH', '/usr/local/include:'), ('LANGUAGE', 'en_GB:en'), ('USER', 'sentry-nov'), ('LC_TIME', 'en_GB.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/sentry-nov/code/colcon_3/install/robot_decision_system/lib:/home/sentry-nov/code/colcon_3/install/rm_decision_system/lib:/home/sentry-nov/code/colcon_3/install/path_planning/lib:/home/sentry-nov/code/colcon_3/install/path_motion_planning/lib:/home/sentry-nov/code/colcon_3/install/rm_interface/lib:/home/sentry-nov/code/colcon_3/install/m_detector/lib:/home/sentry-nov/code/colcon_3/install/fast_lio/lib:/home/sentry-nov/code/colcon_3/install/livox_ros_driver2/lib:/home/sentry-nov/code/colcon_3/install/altitude_map/lib:/usr/local/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/sentry-nov'), ('OLDPWD', '/home/sentry-nov'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_GB.UTF-8'), ('SYSTEMD_EXEC_PID', '1388'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('CPLUS_INCLUDE_PATH', '/usr/local/include:'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/sentry-nov/code/colcon_3/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'sentry-nov'), ('_', '/usr/bin/python3'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'sentry-nov'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/sentry-nov:@/tmp/.ICE-unix/1369,unix/sentry-nov:/tmp/.ICE-unix/1369'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_GB.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/bdbbb5ae_a25f_47e7_8b0f_bd78a15f438b'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_GB.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_GB.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.100'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/sentry-nov/code/colcon_3/install/tilted_lidar:/home/sentry-nov/code/colcon_3/install/rviz_plugin:/home/sentry-nov/code/colcon_3/install/robot_decision_system:/home/sentry-nov/code/colcon_3/install/rm_serial:/home/sentry-nov/code/colcon_3/install/rm_decision_system:/home/sentry-nov/code/colcon_3/install/rm_decision:/home/sentry-nov/code/colcon_3/install/motion_planning:/home/sentry-nov/code/colcon_3/install/path_planning:/home/sentry-nov/code/colcon_3/install/path_motion_planning:/home/sentry-nov/code/colcon_3/install/ikd_tree_mapping:/home/sentry-nov/code/colcon_3/install/rm_interface:/home/sentry-nov/code/colcon_3/install/point_lio:/home/sentry-nov/code/colcon_3/install/m_detector:/home/sentry-nov/code/colcon_3/install/fast_lio:/home/sentry-nov/code/colcon_3/install/livox_ros_driver2:/home/sentry-nov/code/colcon_3/install/icp_relocalization:/home/sentry-nov/code/colcon_3/install/altitude_map:/home/sentry-nov/code/colcon_3/install/debug_tools:/home/sentry-nov/code/colcon_3/install/auto_start:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_GB.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_GB.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'en_GB.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/sentry-nov/code/colcon_3/build/altitude_map'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/sentry-nov/code/colcon_3/install/robot_decision_system/local/lib/python3.10/dist-packages:/home/sentry-nov/code/colcon_3/install/rm_decision_system/local/lib/python3.10/dist-packages:/home/sentry-nov/code/colcon_3/install/rm_interface/local/lib/python3.10/dist-packages:/home/sentry-nov/code/colcon_3/install/fast_lio/local/lib/python3.10/dist-packages:/home/sentry-nov/code/colcon_3/install/livox_ros_driver2/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_GB.UTF-8'), ('LC_PAPER', 'en_GB.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/sentry-nov/code/colcon_3/install/debug_tools:/home/sentry-nov/code/colcon_3/install/tilted_lidar:/home/sentry-nov/code/colcon_3/install/rviz_plugin:/home/sentry-nov/code/colcon_3/install/robot_decision_system:/home/sentry-nov/code/colcon_3/install/rm_serial:/home/sentry-nov/code/colcon_3/install/rm_decision_system:/home/sentry-nov/code/colcon_3/install/rm_decision:/home/sentry-nov/code/colcon_3/install/motion_planning:/home/sentry-nov/code/colcon_3/install/path_planning:/home/sentry-nov/code/colcon_3/install/path_motion_planning:/home/sentry-nov/code/colcon_3/install/ikd_tree_mapping:/home/sentry-nov/code/colcon_3/install/rm_interface:/home/sentry-nov/code/colcon_3/install/point_lio:/home/sentry-nov/code/colcon_3/install/m_detector:/home/sentry-nov/code/colcon_3/install/fast_lio:/home/sentry-nov/code/colcon_3/install/livox_ros_driver2:/home/sentry-nov/code/colcon_3/install/icp_relocalization:/home/sentry-nov/code/colcon_3/install/altitude_map:/home/sentry-nov/code/colcon_3/install/auto_start:/opt/ros/humble')]), 'shell': False}
+[0.076552] (auto_start) CommandEnded: {'returncode': 0}
+[0.077213] (auto_start) JobProgress: {'identifier': 'auto_start', 'progress': 'install'}
+[0.087037] (rm_interface) StdoutLine: {'line': b'[  1%] Built target rm_interface__cpp\n'}
+[0.088557] (auto_start) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/sentry-nov/code/colcon_3/build/auto_start'], 'cwd': '/home/sentry-nov/code/colcon_3/build/auto_start', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LIBRARY_PATH', '/usr/local/lib:'), ('C_INCLUDE_PATH', '/usr/local/include:'), ('LANGUAGE', 'en_GB:en'), ('USER', 'sentry-nov'), ('LC_TIME', 'en_GB.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/sentry-nov/code/colcon_3/install/robot_decision_system/lib:/home/sentry-nov/code/colcon_3/install/rm_decision_system/lib:/home/sentry-nov/code/colcon_3/install/path_planning/lib:/home/sentry-nov/code/colcon_3/install/path_motion_planning/lib:/home/sentry-nov/code/colcon_3/install/rm_interface/lib:/home/sentry-nov/code/colcon_3/install/m_detector/lib:/home/sentry-nov/code/colcon_3/install/fast_lio/lib:/home/sentry-nov/code/colcon_3/install/livox_ros_driver2/lib:/home/sentry-nov/code/colcon_3/install/altitude_map/lib:/usr/local/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/sentry-nov'), ('OLDPWD', '/home/sentry-nov'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_GB.UTF-8'), ('SYSTEMD_EXEC_PID', '1388'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('CPLUS_INCLUDE_PATH', '/usr/local/include:'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/sentry-nov/code/colcon_3/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'sentry-nov'), ('_', '/usr/bin/python3'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'sentry-nov'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/sentry-nov:@/tmp/.ICE-unix/1369,unix/sentry-nov:/tmp/.ICE-unix/1369'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_GB.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/bdbbb5ae_a25f_47e7_8b0f_bd78a15f438b'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_GB.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_GB.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.100'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/sentry-nov/code/colcon_3/install/tilted_lidar:/home/sentry-nov/code/colcon_3/install/rviz_plugin:/home/sentry-nov/code/colcon_3/install/robot_decision_system:/home/sentry-nov/code/colcon_3/install/rm_serial:/home/sentry-nov/code/colcon_3/install/rm_decision_system:/home/sentry-nov/code/colcon_3/install/rm_decision:/home/sentry-nov/code/colcon_3/install/motion_planning:/home/sentry-nov/code/colcon_3/install/path_planning:/home/sentry-nov/code/colcon_3/install/path_motion_planning:/home/sentry-nov/code/colcon_3/install/ikd_tree_mapping:/home/sentry-nov/code/colcon_3/install/rm_interface:/home/sentry-nov/code/colcon_3/install/point_lio:/home/sentry-nov/code/colcon_3/install/m_detector:/home/sentry-nov/code/colcon_3/install/fast_lio:/home/sentry-nov/code/colcon_3/install/livox_ros_driver2:/home/sentry-nov/code/colcon_3/install/icp_relocalization:/home/sentry-nov/code/colcon_3/install/altitude_map:/home/sentry-nov/code/colcon_3/install/debug_tools:/home/sentry-nov/code/colcon_3/install/auto_start:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_GB.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_GB.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'en_GB.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/sentry-nov/code/colcon_3/build/auto_start'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/sentry-nov/code/colcon_3/install/robot_decision_system/local/lib/python3.10/dist-packages:/home/sentry-nov/code/colcon_3/install/rm_decision_system/local/lib/python3.10/dist-packages:/home/sentry-nov/code/colcon_3/install/rm_interface/local/lib/python3.10/dist-packages:/home/sentry-nov/code/colcon_3/install/fast_lio/local/lib/python3.10/dist-packages:/home/sentry-nov/code/colcon_3/install/livox_ros_driver2/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_GB.UTF-8'), ('LC_PAPER', 'en_GB.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/sentry-nov/code/colcon_3/install/tilted_lidar:/home/sentry-nov/code/colcon_3/install/rviz_plugin:/home/sentry-nov/code/colcon_3/install/robot_decision_system:/home/sentry-nov/code/colcon_3/install/rm_serial:/home/sentry-nov/code/colcon_3/install/rm_decision_system:/home/sentry-nov/code/colcon_3/install/rm_decision:/home/sentry-nov/code/colcon_3/install/motion_planning:/home/sentry-nov/code/colcon_3/install/path_planning:/home/sentry-nov/code/colcon_3/install/path_motion_planning:/home/sentry-nov/code/colcon_3/install/ikd_tree_mapping:/home/sentry-nov/code/colcon_3/install/rm_interface:/home/sentry-nov/code/colcon_3/install/point_lio:/home/sentry-nov/code/colcon_3/install/m_detector:/home/sentry-nov/code/colcon_3/install/fast_lio:/home/sentry-nov/code/colcon_3/install/livox_ros_driver2:/home/sentry-nov/code/colcon_3/install/icp_relocalization:/home/sentry-nov/code/colcon_3/install/altitude_map:/home/sentry-nov/code/colcon_3/install/debug_tools:/home/sentry-nov/code/colcon_3/install/auto_start:/opt/ros/humble')]), 'shell': False}
+[0.090054] (rm_interface) StdoutLine: {'line': b'[ 12%] Built target rm_interface__rosidl_generator_c\n'}
+[0.102191] (auto_start) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[0.102537] (-) TimerEvent: {}
+[0.102852] (auto_start) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/auto_start/share/auto_start/rviz\n'}
+[0.103004] (auto_start) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/auto_start/share/auto_start/rviz/odom_icp.rviz\n'}
+[0.103085] (auto_start) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/auto_start/share/auto_start/rviz/odom_mapping.rviz\n'}
+[0.103161] (auto_start) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/auto_start/share/auto_start/rviz/mapping_ikd.rviz\n'}
+[0.103235] (auto_start) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/auto_start/share/auto_start/rviz/planning.rviz\n'}
+[0.103309] (auto_start) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/auto_start/share/auto_start/launch\n'}
+[0.103384] (auto_start) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/auto_start/share/auto_start/launch/odom_icp.launch.py\n'}
+[0.103459] (auto_start) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/auto_start/share/auto_start/launch/planning.launch.py\n'}
+[0.103533] (auto_start) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/auto_start/share/auto_start/launch/mapping_ikd.launch.py\n'}
+[0.103822] (auto_start) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/auto_start/share/auto_start/launch/path_motion.launch.py\n'}
+[0.104024] (auto_start) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/auto_start/share/auto_start/launch/odom_mapping.launch.py\n'}
+[0.104218] (auto_start) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/auto_start/share/auto_start/launch/manager.py\n'}
+[0.104403] (auto_start) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/auto_start/share/auto_start/config\n'}
+[0.104643] (auto_start) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/auto_start/share/auto_start/config/path_planning.yaml\n'}
+[0.104836] (auto_start) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/auto_start/share/auto_start/config/path_motion_planning.yaml\n'}
+[0.105032] (auto_start) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/auto_start/share/auto_start/config/path_planning copy.yaml\n'}
+[0.105411] (rm_interface) StdoutLine: {'line': b'[ 12%] Built target ament_cmake_python_copy_rm_interface\n'}
+[0.105543] (auto_start) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/auto_start/share/ament_index/resource_index/package_run_dependencies/auto_start\n'}
+[0.105806] (auto_start) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/auto_start/share/ament_index/resource_index/parent_prefix_path/auto_start\n'}
+[0.106046] (auto_start) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/auto_start/share/auto_start/environment/ament_prefix_path.sh\n'}
+[0.106272] (auto_start) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/auto_start/share/auto_start/environment/ament_prefix_path.dsv\n'}
+[0.106498] (auto_start) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/auto_start/share/auto_start/environment/path.sh\n'}
+[0.106731] (auto_start) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/auto_start/share/auto_start/environment/path.dsv\n'}
+[0.106956] (auto_start) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/auto_start/share/auto_start/local_setup.bash\n'}
+[0.107208] (auto_start) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/auto_start/share/auto_start/local_setup.sh\n'}
+[0.107445] (auto_start) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/auto_start/share/auto_start/local_setup.zsh\n'}
+[0.107676] (auto_start) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/auto_start/share/auto_start/local_setup.dsv\n'}
+[0.107914] (auto_start) StdoutLine: {'line': b'-- Installing: /home/sentry-nov/code/colcon_3/install/auto_start/share/auto_start/package.dsv\n'}
+[0.108529] (auto_start) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/auto_start/share/ament_index/resource_index/packages/auto_start\n'}
+[0.108865] (auto_start) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/auto_start/share/auto_start/cmake/auto_startConfig.cmake\n'}
+[0.109084] (auto_start) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/auto_start/share/auto_start/cmake/auto_startConfig-version.cmake\n'}
+[0.109361] (auto_start) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/auto_start/share/auto_start/package.xml\n'}
+[0.114238] (auto_start) CommandEnded: {'returncode': 0}
+[0.124067] (altitude_map) StdoutLine: {'line': b'[ 14%] Built target test_generate_cloud_node\n'}
+[0.129956] (altitude_map) StdoutLine: {'line': b'[ 71%] Built target altitude_map\n'}
+[0.130992] (rm_interface) StdoutLine: {'line': b'[ 46%] Built target rm_interface__rosidl_typesupport_cpp\n'}
+[0.131277] (rm_interface) StdoutLine: {'line': b'[ 46%] Built target rm_interface__rosidl_typesupport_introspection_c\n'}
+[0.132800] (rm_interface) StdoutLine: {'line': b'[ 46%] Built target rm_interface__rosidl_typesupport_introspection_cpp\n'}
+[0.134298] (rm_interface) StdoutLine: {'line': b'[ 79%] Built target rm_interface__rosidl_typesupport_c\n'}
+[0.134469] (rm_interface) StdoutLine: {'line': b'[ 79%] Built target rm_interface__rosidl_typesupport_fastrtps_cpp\n'}
+[0.134613] (rm_interface) StdoutLine: {'line': b'[ 79%] Built target rm_interface__rosidl_typesupport_fastrtps_c\n'}
+[0.143650] (auto_start) JobEnded: {'identifier': 'auto_start', 'rc': 0}
+[0.159946] (rm_interface) StdoutLine: {'line': b'[ 79%] Built target rm_interface\n'}
+[0.174041] (altitude_map) StdoutLine: {'line': b'[ 85%] Built target test_local_node\n'}
+[0.174558] (altitude_map) StdoutLine: {'line': b'[100%] Built target test_global_node\n'}
+[0.189127] (rm_interface) StdoutLine: {'line': b'[ 80%] Built target rm_interface__py\n'}
+[0.190444] (altitude_map) CommandEnded: {'returncode': 0}
+[0.191086] (altitude_map) JobProgress: {'identifier': 'altitude_map', 'progress': 'install'}
+[0.192464] (altitude_map) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/sentry-nov/code/colcon_3/build/altitude_map'], 'cwd': '/home/sentry-nov/code/colcon_3/build/altitude_map', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LIBRARY_PATH', '/usr/local/lib:'), ('C_INCLUDE_PATH', '/usr/local/include:'), ('LANGUAGE', 'en_GB:en'), ('USER', 'sentry-nov'), ('LC_TIME', 'en_GB.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/sentry-nov/code/colcon_3/install/robot_decision_system/lib:/home/sentry-nov/code/colcon_3/install/rm_decision_system/lib:/home/sentry-nov/code/colcon_3/install/path_planning/lib:/home/sentry-nov/code/colcon_3/install/path_motion_planning/lib:/home/sentry-nov/code/colcon_3/install/rm_interface/lib:/home/sentry-nov/code/colcon_3/install/m_detector/lib:/home/sentry-nov/code/colcon_3/install/fast_lio/lib:/home/sentry-nov/code/colcon_3/install/livox_ros_driver2/lib:/home/sentry-nov/code/colcon_3/install/altitude_map/lib:/usr/local/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/sentry-nov'), ('OLDPWD', '/home/sentry-nov'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_GB.UTF-8'), ('SYSTEMD_EXEC_PID', '1388'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('CPLUS_INCLUDE_PATH', '/usr/local/include:'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/sentry-nov/code/colcon_3/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'sentry-nov'), ('_', '/usr/bin/python3'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'sentry-nov'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/sentry-nov:@/tmp/.ICE-unix/1369,unix/sentry-nov:/tmp/.ICE-unix/1369'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_GB.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/bdbbb5ae_a25f_47e7_8b0f_bd78a15f438b'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_GB.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_GB.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.100'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/sentry-nov/code/colcon_3/install/tilted_lidar:/home/sentry-nov/code/colcon_3/install/rviz_plugin:/home/sentry-nov/code/colcon_3/install/robot_decision_system:/home/sentry-nov/code/colcon_3/install/rm_serial:/home/sentry-nov/code/colcon_3/install/rm_decision_system:/home/sentry-nov/code/colcon_3/install/rm_decision:/home/sentry-nov/code/colcon_3/install/motion_planning:/home/sentry-nov/code/colcon_3/install/path_planning:/home/sentry-nov/code/colcon_3/install/path_motion_planning:/home/sentry-nov/code/colcon_3/install/ikd_tree_mapping:/home/sentry-nov/code/colcon_3/install/rm_interface:/home/sentry-nov/code/colcon_3/install/point_lio:/home/sentry-nov/code/colcon_3/install/m_detector:/home/sentry-nov/code/colcon_3/install/fast_lio:/home/sentry-nov/code/colcon_3/install/livox_ros_driver2:/home/sentry-nov/code/colcon_3/install/icp_relocalization:/home/sentry-nov/code/colcon_3/install/altitude_map:/home/sentry-nov/code/colcon_3/install/debug_tools:/home/sentry-nov/code/colcon_3/install/auto_start:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_GB.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_GB.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'en_GB.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/sentry-nov/code/colcon_3/build/altitude_map'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/sentry-nov/code/colcon_3/install/robot_decision_system/local/lib/python3.10/dist-packages:/home/sentry-nov/code/colcon_3/install/rm_decision_system/local/lib/python3.10/dist-packages:/home/sentry-nov/code/colcon_3/install/rm_interface/local/lib/python3.10/dist-packages:/home/sentry-nov/code/colcon_3/install/fast_lio/local/lib/python3.10/dist-packages:/home/sentry-nov/code/colcon_3/install/livox_ros_driver2/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_GB.UTF-8'), ('LC_PAPER', 'en_GB.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/sentry-nov/code/colcon_3/install/debug_tools:/home/sentry-nov/code/colcon_3/install/tilted_lidar:/home/sentry-nov/code/colcon_3/install/rviz_plugin:/home/sentry-nov/code/colcon_3/install/robot_decision_system:/home/sentry-nov/code/colcon_3/install/rm_serial:/home/sentry-nov/code/colcon_3/install/rm_decision_system:/home/sentry-nov/code/colcon_3/install/rm_decision:/home/sentry-nov/code/colcon_3/install/motion_planning:/home/sentry-nov/code/colcon_3/install/path_planning:/home/sentry-nov/code/colcon_3/install/path_motion_planning:/home/sentry-nov/code/colcon_3/install/ikd_tree_mapping:/home/sentry-nov/code/colcon_3/install/rm_interface:/home/sentry-nov/code/colcon_3/install/point_lio:/home/sentry-nov/code/colcon_3/install/m_detector:/home/sentry-nov/code/colcon_3/install/fast_lio:/home/sentry-nov/code/colcon_3/install/livox_ros_driver2:/home/sentry-nov/code/colcon_3/install/icp_relocalization:/home/sentry-nov/code/colcon_3/install/altitude_map:/home/sentry-nov/code/colcon_3/install/auto_start:/opt/ros/humble')]), 'shell': False}
+[0.202447] (altitude_map) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[0.202734] (-) TimerEvent: {}
+[0.202888] (altitude_map) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/altitude_map/share/altitude_map/environment/library_path.sh\n'}
+[0.202985] (altitude_map) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/altitude_map/share/altitude_map/environment/library_path.dsv\n'}
+[0.203092] (altitude_map) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/altitude_map/include\n'}
+[0.203168] (altitude_map) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/altitude_map/include/altitude_map\n'}
+[0.203266] (altitude_map) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/altitude_map/include/altitude_map/prob\n'}
+[0.203344] (altitude_map) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/altitude_map/include/altitude_map/prob/sliding_map.h\n'}
+[0.203423] (altitude_map) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/altitude_map/include/altitude_map/prob/prob_map.h\n'}
+[0.203500] (altitude_map) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/altitude_map/include/altitude_map/prob/prob_config.hpp\n'}
+[0.203601] (altitude_map) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/altitude_map/include/altitude_map/prob/raycaster.h\n'}
+[0.203680] (altitude_map) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/altitude_map/include/altitude_map/altitude_map.h\n'}
+[0.203755] (altitude_map) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/altitude_map/include/altitude_map/local_map.h\n'}
+[0.203830] (altitude_map) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/altitude_map/include/altitude_map/cloud_generator.h\n'}
+[0.203943] (altitude_map) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/altitude_map/include/altitude_map/grid_map.h\n'}
+[0.204019] (altitude_map) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/altitude_map/include/altitude_map/global_map.h\n'}
+[0.204113] (altitude_map) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/altitude_map/lib/libaltitude_map.so\n'}
+[0.204228] (altitude_map) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/altitude_map/lib/altitude_map/test_global_node\n'}
+[0.204327] (altitude_map) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/altitude_map/lib/altitude_map/test_local_node\n'}
+[0.204441] (altitude_map) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/altitude_map/lib/altitude_map/test_generate_cloud_node\n'}
+[0.204541] (altitude_map) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/altitude_map/share/ament_index/resource_index/package_run_dependencies/altitude_map\n'}
+[0.204614] (altitude_map) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/altitude_map/share/ament_index/resource_index/parent_prefix_path/altitude_map\n'}
+[0.204686] (altitude_map) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/altitude_map/share/altitude_map/environment/ament_prefix_path.sh\n'}
+[0.204774] (altitude_map) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/altitude_map/share/altitude_map/environment/ament_prefix_path.dsv\n'}
+[0.204866] (altitude_map) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/altitude_map/share/altitude_map/environment/path.sh\n'}
+[0.204968] (altitude_map) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/altitude_map/share/altitude_map/environment/path.dsv\n'}
+[0.205038] (altitude_map) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/altitude_map/share/altitude_map/local_setup.bash\n'}
+[0.205106] (altitude_map) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/altitude_map/share/altitude_map/local_setup.sh\n'}
+[0.205174] (altitude_map) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/altitude_map/share/altitude_map/local_setup.zsh\n'}
+[0.205242] (altitude_map) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/altitude_map/share/altitude_map/local_setup.dsv\n'}
+[0.205329] (altitude_map) StdoutLine: {'line': b'-- Installing: /home/sentry-nov/code/colcon_3/install/altitude_map/share/altitude_map/package.dsv\n'}
+[0.205407] (altitude_map) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/altitude_map/share/ament_index/resource_index/packages/altitude_map\n'}
+[0.205475] (altitude_map) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/altitude_map/share/altitude_map/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[0.205543] (altitude_map) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/altitude_map/share/altitude_map/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[0.205612] (altitude_map) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/altitude_map/share/altitude_map/cmake/altitude_mapConfig.cmake\n'}
+[0.205682] (altitude_map) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/altitude_map/share/altitude_map/cmake/altitude_mapConfig-version.cmake\n'}
+[0.205752] (altitude_map) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/altitude_map/share/altitude_map/package.xml\n'}
+[0.207251] (altitude_map) CommandEnded: {'returncode': 0}
+[0.221103] (rm_interface) StdoutLine: {'line': b'[ 90%] Built target rm_interface__rosidl_generator_py\n'}
+[0.231700] (altitude_map) JobEnded: {'identifier': 'altitude_map', 'rc': 0}
+[0.250935] (rm_interface) StdoutLine: {'line': b'[ 93%] Built target rm_interface__rosidl_typesupport_c__pyext\n'}
+[0.251806] (rm_interface) StdoutLine: {'line': b'[ 98%] Built target rm_interface__rosidl_typesupport_introspection_c__pyext\n'}
+[0.251996] (rm_interface) StdoutLine: {'line': b'[100%] Built target rm_interface__rosidl_typesupport_fastrtps_c__pyext\n'}
+[0.302878] (-) TimerEvent: {}
+[0.340950] (rm_interface) StdoutLine: {'line': b'running egg_info\n'}
+[0.341610] (rm_interface) StdoutLine: {'line': b'writing rm_interface.egg-info/PKG-INFO\n'}
+[0.341957] (rm_interface) StdoutLine: {'line': b'writing dependency_links to rm_interface.egg-info/dependency_links.txt\n'}
+[0.342174] (rm_interface) StdoutLine: {'line': b'writing top-level names to rm_interface.egg-info/top_level.txt\n'}
+[0.344130] (rm_interface) StdoutLine: {'line': b"reading manifest file 'rm_interface.egg-info/SOURCES.txt'\n"}
+[0.344658] (rm_interface) StdoutLine: {'line': b"writing manifest file 'rm_interface.egg-info/SOURCES.txt'\n"}
+[0.382383] (rm_interface) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_rm_interface_egg\n'}
+[0.400273] (rm_interface) CommandEnded: {'returncode': 0}
+[0.401137] (rm_interface) JobProgress: {'identifier': 'rm_interface', 'progress': 'install'}
+[0.401378] (rm_interface) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/sentry-nov/code/colcon_3/build/rm_interface'], 'cwd': '/home/sentry-nov/code/colcon_3/build/rm_interface', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LIBRARY_PATH', '/usr/local/lib:'), ('C_INCLUDE_PATH', '/usr/local/include:'), ('LANGUAGE', 'en_GB:en'), ('USER', 'sentry-nov'), ('LC_TIME', 'en_GB.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/sentry-nov/code/colcon_3/install/robot_decision_system/lib:/home/sentry-nov/code/colcon_3/install/rm_decision_system/lib:/home/sentry-nov/code/colcon_3/install/path_planning/lib:/home/sentry-nov/code/colcon_3/install/path_motion_planning/lib:/home/sentry-nov/code/colcon_3/install/rm_interface/lib:/home/sentry-nov/code/colcon_3/install/m_detector/lib:/home/sentry-nov/code/colcon_3/install/fast_lio/lib:/home/sentry-nov/code/colcon_3/install/livox_ros_driver2/lib:/home/sentry-nov/code/colcon_3/install/altitude_map/lib:/usr/local/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/sentry-nov'), ('OLDPWD', '/home/sentry-nov'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_GB.UTF-8'), ('SYSTEMD_EXEC_PID', '1388'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('CPLUS_INCLUDE_PATH', '/usr/local/include:'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/sentry-nov/code/colcon_3/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'sentry-nov'), ('_', '/usr/bin/python3'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'sentry-nov'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/sentry-nov:@/tmp/.ICE-unix/1369,unix/sentry-nov:/tmp/.ICE-unix/1369'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_GB.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/bdbbb5ae_a25f_47e7_8b0f_bd78a15f438b'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_GB.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_GB.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.100'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/sentry-nov/code/colcon_3/install/tilted_lidar:/home/sentry-nov/code/colcon_3/install/rviz_plugin:/home/sentry-nov/code/colcon_3/install/robot_decision_system:/home/sentry-nov/code/colcon_3/install/rm_serial:/home/sentry-nov/code/colcon_3/install/rm_decision_system:/home/sentry-nov/code/colcon_3/install/rm_decision:/home/sentry-nov/code/colcon_3/install/motion_planning:/home/sentry-nov/code/colcon_3/install/path_planning:/home/sentry-nov/code/colcon_3/install/path_motion_planning:/home/sentry-nov/code/colcon_3/install/ikd_tree_mapping:/home/sentry-nov/code/colcon_3/install/rm_interface:/home/sentry-nov/code/colcon_3/install/point_lio:/home/sentry-nov/code/colcon_3/install/m_detector:/home/sentry-nov/code/colcon_3/install/fast_lio:/home/sentry-nov/code/colcon_3/install/livox_ros_driver2:/home/sentry-nov/code/colcon_3/install/icp_relocalization:/home/sentry-nov/code/colcon_3/install/altitude_map:/home/sentry-nov/code/colcon_3/install/debug_tools:/home/sentry-nov/code/colcon_3/install/auto_start:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_GB.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_GB.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'en_GB.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/sentry-nov/code/colcon_3/build/rm_interface'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/sentry-nov/code/colcon_3/install/robot_decision_system/local/lib/python3.10/dist-packages:/home/sentry-nov/code/colcon_3/install/rm_decision_system/local/lib/python3.10/dist-packages:/home/sentry-nov/code/colcon_3/install/rm_interface/local/lib/python3.10/dist-packages:/home/sentry-nov/code/colcon_3/install/fast_lio/local/lib/python3.10/dist-packages:/home/sentry-nov/code/colcon_3/install/livox_ros_driver2/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_GB.UTF-8'), ('LC_PAPER', 'en_GB.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/sentry-nov/code/colcon_3/install/tilted_lidar:/home/sentry-nov/code/colcon_3/install/rviz_plugin:/home/sentry-nov/code/colcon_3/install/robot_decision_system:/home/sentry-nov/code/colcon_3/install/rm_serial:/home/sentry-nov/code/colcon_3/install/rm_decision_system:/home/sentry-nov/code/colcon_3/install/rm_decision:/home/sentry-nov/code/colcon_3/install/motion_planning:/home/sentry-nov/code/colcon_3/install/path_planning:/home/sentry-nov/code/colcon_3/install/path_motion_planning:/home/sentry-nov/code/colcon_3/install/ikd_tree_mapping:/home/sentry-nov/code/colcon_3/install/rm_interface:/home/sentry-nov/code/colcon_3/install/point_lio:/home/sentry-nov/code/colcon_3/install/m_detector:/home/sentry-nov/code/colcon_3/install/fast_lio:/home/sentry-nov/code/colcon_3/install/livox_ros_driver2:/home/sentry-nov/code/colcon_3/install/icp_relocalization:/home/sentry-nov/code/colcon_3/install/altitude_map:/home/sentry-nov/code/colcon_3/install/debug_tools:/home/sentry-nov/code/colcon_3/install/auto_start:/opt/ros/humble')]), 'shell': False}
+[0.402922] (-) TimerEvent: {}
+[0.412625] (rm_interface) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[0.412977] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/share/ament_index/resource_index/rosidl_interfaces/rm_interface\n'}
+[0.413195] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface\n'}
+[0.413445] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/srv\n'}
+[0.413696] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/srv/set_local_mode.h\n'}
+[0.413834] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/srv/save_pcd.h\n'}
+[0.413968] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/srv/nav_core.h\n'}
+[0.414082] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/srv/detail\n'}
+[0.414277] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/srv/detail/nav_core__functions.h\n'}
+[0.414463] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/srv/detail/nav_core__type_support.h\n'}
+[0.414634] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/srv/detail/nav_core__struct.h\n'}
+[0.414727] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/srv/detail/set_local_mode__functions.c\n'}
+[0.414792] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/srv/detail/save_pcd__functions.h\n'}
+[0.414844] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/srv/detail/nav_core__functions.c\n'}
+[0.414894] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/srv/detail/set_local_mode__type_support.h\n'}
+[0.414945] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/srv/detail/set_local_mode__functions.h\n'}
+[0.415025] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/srv/detail/set_local_mode__struct.h\n'}
+[0.415077] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/srv/detail/save_pcd__struct.h\n'}
+[0.415127] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/srv/detail/save_pcd__functions.c\n'}
+[0.415209] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/srv/detail/save_pcd__type_support.h\n'}
+[0.415285] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/msg\n'}
+[0.415375] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/msg/rosidl_generator_c__visibility_control.h\n'}
+[0.415454] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/msg/local_state.h\n'}
+[0.415524] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/msg/command.h\n'}
+[0.415616] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/msg/detail\n'}
+[0.415685] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/msg/detail/local_state__type_support.h\n'}
+[0.415745] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/msg/detail/command__functions.h\n'}
+[0.415833] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/msg/detail/command__type_support.h\n'}
+[0.415903] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/msg/detail/command__functions.c\n'}
+[0.415983] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/msg/detail/local_state__functions.h\n'}
+[0.416052] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/msg/detail/local_state__struct.h\n'}
+[0.416126] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/msg/detail/command__struct.h\n'}
+[0.416207] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/msg/detail/local_state__functions.c\n'}
+[0.416262] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/share/rm_interface/environment/library_path.sh\n'}
+[0.416358] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/share/rm_interface/environment/library_path.dsv\n'}
+[0.416444] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/lib/librm_interface__rosidl_generator_c.so\n'}
+[0.416501] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface\n'}
+[0.416575] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/srv\n'}
+[0.416631] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/srv/detail\n'}
+[0.416696] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/srv/detail/nav_core__rosidl_typesupport_fastrtps_c.h\n'}
+[0.416748] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/srv/detail/set_local_mode__rosidl_typesupport_fastrtps_c.h\n'}
+[0.416800] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/srv/detail/save_pcd__rosidl_typesupport_fastrtps_c.h\n'}
+[0.416870] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/msg\n'}
+[0.416944] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/msg/detail\n'}
+[0.417026] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/msg/detail/command__rosidl_typesupport_fastrtps_c.h\n'}
+[0.417102] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/msg/detail/local_state__rosidl_typesupport_fastrtps_c.h\n'}
+[0.417181] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[0.417262] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/lib/librm_interface__rosidl_typesupport_fastrtps_c.so\n'}
+[0.417351] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface\n'}
+[0.417405] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/srv\n'}
+[0.417456] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/srv/detail\n'}
+[0.417521] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/srv/detail/save_pcd__traits.hpp\n'}
+[0.417573] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/srv/detail/set_local_mode__traits.hpp\n'}
+[0.417623] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/srv/detail/save_pcd__struct.hpp\n'}
+[0.417673] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/srv/detail/save_pcd__builder.hpp\n'}
+[0.417722] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/srv/detail/save_pcd__type_support.hpp\n'}
+[0.417785] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/srv/detail/nav_core__type_support.hpp\n'}
+[0.417838] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/srv/detail/nav_core__builder.hpp\n'}
+[0.417890] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/srv/detail/set_local_mode__type_support.hpp\n'}
+[0.417946] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/srv/detail/set_local_mode__builder.hpp\n'}
+[0.418024] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/srv/detail/set_local_mode__struct.hpp\n'}
+[0.418104] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/srv/detail/nav_core__traits.hpp\n'}
+[0.418202] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/srv/detail/nav_core__struct.hpp\n'}
+[0.418274] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/srv/nav_core.hpp\n'}
+[0.418346] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/srv/save_pcd.hpp\n'}
+[0.418411] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/srv/set_local_mode.hpp\n'}
+[0.418463] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/msg\n'}
+[0.418514] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/msg/detail\n'}
+[0.418580] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/msg/detail/command__struct.hpp\n'}
+[0.418635] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/msg/detail/command__traits.hpp\n'}
+[0.418688] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/msg/detail/command__type_support.hpp\n'}
+[0.418740] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/msg/detail/local_state__struct.hpp\n'}
+[0.418797] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/msg/detail/local_state__traits.hpp\n'}
+[0.418863] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/msg/detail/command__builder.hpp\n'}
+[0.418916] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/msg/detail/local_state__type_support.hpp\n'}
+[0.418974] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/msg/detail/local_state__builder.hpp\n'}
+[0.419032] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[0.419118] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/msg/local_state.hpp\n'}
+[0.419172] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/msg/command.hpp\n'}
+[0.419225] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface\n'}
+[0.419277] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/srv\n'}
+[0.419330] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/srv/detail\n'}
+[0.419396] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/srv/detail/nav_core__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.419449] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/srv/detail/dds_fastrtps\n'}
+[0.419515] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/srv/detail/set_local_mode__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.419569] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/srv/detail/save_pcd__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.419625] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/msg\n'}
+[0.419701] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/msg/detail\n'}
+[0.419754] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/msg/detail/local_state__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.419817] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/msg/detail/dds_fastrtps\n'}
+[0.419889] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/msg/detail/command__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.419960] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[0.420041] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/lib/librm_interface__rosidl_typesupport_fastrtps_cpp.so\n'}
+[0.420124] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface\n'}
+[0.420198] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/srv\n'}
+[0.420285] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/srv/detail\n'}
+[0.420354] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/srv/detail/set_local_mode__type_support.c\n'}
+[0.420445] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/srv/detail/nav_core__rosidl_typesupport_introspection_c.h\n'}
+[0.420499] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/srv/detail/save_pcd__type_support.c\n'}
+[0.420551] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/srv/detail/set_local_mode__rosidl_typesupport_introspection_c.h\n'}
+[0.420602] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/srv/detail/nav_core__type_support.c\n'}
+[0.420654] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/srv/detail/save_pcd__rosidl_typesupport_introspection_c.h\n'}
+[0.420711] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/msg\n'}
+[0.420762] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/msg/detail\n'}
+[0.420820] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/msg/detail/command__rosidl_typesupport_introspection_c.h\n'}
+[0.420871] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/msg/detail/local_state__rosidl_typesupport_introspection_c.h\n'}
+[0.420922] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/msg/detail/command__type_support.c\n'}
+[0.420973] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/msg/detail/local_state__type_support.c\n'}
+[0.421030] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[0.421082] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/lib/librm_interface__rosidl_typesupport_introspection_c.so\n'}
+[0.421134] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/lib/librm_interface__rosidl_typesupport_c.so\n'}
+[0.421186] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface\n'}
+[0.421239] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/srv\n'}
+[0.421291] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/srv/detail\n'}
+[0.421429] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/srv/detail/save_pcd__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.421483] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/srv/detail/save_pcd__type_support.cpp\n'}
+[0.421536] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/srv/detail/nav_core__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.421600] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/srv/detail/nav_core__type_support.cpp\n'}
+[0.421656] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/srv/detail/set_local_mode__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.421708] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/srv/detail/set_local_mode__type_support.cpp\n'}
+[0.421760] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/msg\n'}
+[0.421811] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/msg/detail\n'}
+[0.421863] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/msg/detail/command__type_support.cpp\n'}
+[0.421914] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/msg/detail/local_state__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.421966] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/msg/detail/command__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.422018] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/include/rm_interface/rm_interface/msg/detail/local_state__type_support.cpp\n'}
+[0.422069] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/lib/librm_interface__rosidl_typesupport_introspection_cpp.so\n'}
+[0.422121] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/lib/librm_interface__rosidl_typesupport_cpp.so\n'}
+[0.422172] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/share/rm_interface/environment/pythonpath.sh\n'}
+[0.422223] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/share/rm_interface/environment/pythonpath.dsv\n'}
+[0.422280] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/local/lib/python3.10/dist-packages/rm_interface-0.0.0-py3.10.egg-info\n'}
+[0.422332] (rm_interface) StdoutLine: {'line': b'-- Installing: /home/sentry-nov/code/colcon_3/install/rm_interface/local/lib/python3.10/dist-packages/rm_interface-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[0.422389] (rm_interface) StdoutLine: {'line': b'-- Installing: /home/sentry-nov/code/colcon_3/install/rm_interface/local/lib/python3.10/dist-packages/rm_interface-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[0.422441] (rm_interface) StdoutLine: {'line': b'-- Installing: /home/sentry-nov/code/colcon_3/install/rm_interface/local/lib/python3.10/dist-packages/rm_interface-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[0.422493] (rm_interface) StdoutLine: {'line': b'-- Installing: /home/sentry-nov/code/colcon_3/install/rm_interface/local/lib/python3.10/dist-packages/rm_interface-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[0.422545] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/local/lib/python3.10/dist-packages/rm_interface\n'}
+[0.422597] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/local/lib/python3.10/dist-packages/rm_interface/rm_interface_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.422652] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/local/lib/python3.10/dist-packages/rm_interface/srv\n'}
+[0.422703] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/local/lib/python3.10/dist-packages/rm_interface/srv/_nav_core_s.c\n'}
+[0.422754] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/local/lib/python3.10/dist-packages/rm_interface/srv/_nav_core.py\n'}
+[0.422806] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/local/lib/python3.10/dist-packages/rm_interface/srv/_save_pcd.py\n'}
+[0.422858] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/local/lib/python3.10/dist-packages/rm_interface/srv/_save_pcd_s.c\n'}
+[0.422909] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/local/lib/python3.10/dist-packages/rm_interface/srv/_set_local_mode_s.c\n'}
+[0.422960] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/local/lib/python3.10/dist-packages/rm_interface/srv/__init__.py\n'}
+[0.423011] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/local/lib/python3.10/dist-packages/rm_interface/srv/_set_local_mode.py\n'}
+[0.423062] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/local/lib/python3.10/dist-packages/rm_interface/rm_interface_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.423115] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/local/lib/python3.10/dist-packages/rm_interface/_rm_interface_s.ep.rosidl_typesupport_c.c\n'}
+[0.423176] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/local/lib/python3.10/dist-packages/rm_interface/_rm_interface_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[0.423228] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/local/lib/python3.10/dist-packages/rm_interface/rm_interface_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.423280] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/local/lib/python3.10/dist-packages/rm_interface/__init__.py\n'}
+[0.423336] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/local/lib/python3.10/dist-packages/rm_interface/msg\n'}
+[0.423393] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/local/lib/python3.10/dist-packages/rm_interface/msg/_local_state.py\n'}
+[0.423444] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/local/lib/python3.10/dist-packages/rm_interface/msg/_local_state_s.c\n'}
+[0.423496] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/local/lib/python3.10/dist-packages/rm_interface/msg/_command.py\n'}
+[0.423547] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/local/lib/python3.10/dist-packages/rm_interface/msg/__init__.py\n'}
+[0.423599] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/local/lib/python3.10/dist-packages/rm_interface/msg/_command_s.c\n'}
+[0.423650] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/local/lib/python3.10/dist-packages/rm_interface/librm_interface__rosidl_generator_py.so\n'}
+[0.423702] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/local/lib/python3.10/dist-packages/rm_interface/_rm_interface_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[0.452302] (rm_interface) StdoutLine: {'line': b"Listing '/home/sentry-nov/code/colcon_3/install/rm_interface/local/lib/python3.10/dist-packages/rm_interface'...\n"}
+[0.452590] (rm_interface) StdoutLine: {'line': b"Listing '/home/sentry-nov/code/colcon_3/install/rm_interface/local/lib/python3.10/dist-packages/rm_interface/msg'...\n"}
+[0.452715] (rm_interface) StdoutLine: {'line': b"Listing '/home/sentry-nov/code/colcon_3/install/rm_interface/local/lib/python3.10/dist-packages/rm_interface/srv'...\n"}
+[0.457116] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/local/lib/python3.10/dist-packages/rm_interface/rm_interface_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.457472] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/local/lib/python3.10/dist-packages/rm_interface/rm_interface_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.457775] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/local/lib/python3.10/dist-packages/rm_interface/rm_interface_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.458074] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/lib/librm_interface__rosidl_generator_py.so\n'}
+[0.458265] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/share/rm_interface/srv/SavePCD.idl\n'}
+[0.458425] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/share/rm_interface/srv/NavCore.idl\n'}
+[0.458575] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/share/rm_interface/srv/SetLocalMode.idl\n'}
+[0.458688] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/share/rm_interface/msg/Command.idl\n'}
+[0.458778] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/share/rm_interface/msg/LocalState.idl\n'}
+[0.458855] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/share/rm_interface/srv/SavePCD.srv\n'}
+[0.458930] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/share/rm_interface/srv/SavePCD_Request.msg\n'}
+[0.458993] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/share/rm_interface/srv/SavePCD_Response.msg\n'}
+[0.459056] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/share/rm_interface/srv/NavCore.srv\n'}
+[0.459133] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/share/rm_interface/srv/NavCore_Request.msg\n'}
+[0.459208] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/share/rm_interface/srv/NavCore_Response.msg\n'}
+[0.459281] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/share/rm_interface/srv/SetLocalMode.srv\n'}
+[0.459346] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/share/rm_interface/srv/SetLocalMode_Request.msg\n'}
+[0.459409] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/share/rm_interface/srv/SetLocalMode_Response.msg\n'}
+[0.459462] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/share/rm_interface/msg/Command.msg\n'}
+[0.459514] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/share/rm_interface/msg/LocalState.msg\n'}
+[0.459576] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/share/ament_index/resource_index/package_run_dependencies/rm_interface\n'}
+[0.459636] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/share/ament_index/resource_index/parent_prefix_path/rm_interface\n'}
+[0.459694] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/share/rm_interface/environment/ament_prefix_path.sh\n'}
+[0.459758] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/share/rm_interface/environment/ament_prefix_path.dsv\n'}
+[0.459834] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/share/rm_interface/environment/path.sh\n'}
+[0.459887] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/share/rm_interface/environment/path.dsv\n'}
+[0.459952] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/share/rm_interface/local_setup.bash\n'}
+[0.460006] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/share/rm_interface/local_setup.sh\n'}
+[0.460078] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/share/rm_interface/local_setup.zsh\n'}
+[0.460131] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/share/rm_interface/local_setup.dsv\n'}
+[0.460196] (rm_interface) StdoutLine: {'line': b'-- Installing: /home/sentry-nov/code/colcon_3/install/rm_interface/share/rm_interface/package.dsv\n'}
+[0.460267] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/share/ament_index/resource_index/packages/rm_interface\n'}
+[0.460333] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/share/rm_interface/cmake/export_rm_interface__rosidl_generator_cExport.cmake\n'}
+[0.460401] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/share/rm_interface/cmake/export_rm_interface__rosidl_generator_cExport-release.cmake\n'}
+[0.460472] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/share/rm_interface/cmake/export_rm_interface__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[0.460535] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/share/rm_interface/cmake/export_rm_interface__rosidl_typesupport_fastrtps_cExport-release.cmake\n'}
+[0.460599] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/share/rm_interface/cmake/export_rm_interface__rosidl_generator_cppExport.cmake\n'}
+[0.460662] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/share/rm_interface/cmake/export_rm_interface__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[0.460715] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/share/rm_interface/cmake/export_rm_interface__rosidl_typesupport_fastrtps_cppExport-release.cmake\n'}
+[0.460780] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/share/rm_interface/cmake/rm_interface__rosidl_typesupport_introspection_cExport.cmake\n'}
+[0.460864] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/share/rm_interface/cmake/rm_interface__rosidl_typesupport_introspection_cExport-release.cmake\n'}
+[0.460943] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/share/rm_interface/cmake/rm_interface__rosidl_typesupport_cExport.cmake\n'}
+[0.461018] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/share/rm_interface/cmake/rm_interface__rosidl_typesupport_cExport-release.cmake\n'}
+[0.461090] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/share/rm_interface/cmake/rm_interface__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[0.461157] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/share/rm_interface/cmake/rm_interface__rosidl_typesupport_introspection_cppExport-release.cmake\n'}
+[0.461245] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/share/rm_interface/cmake/rm_interface__rosidl_typesupport_cppExport.cmake\n'}
+[0.461297] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/share/rm_interface/cmake/rm_interface__rosidl_typesupport_cppExport-release.cmake\n'}
+[0.461361] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/share/rm_interface/cmake/export_rm_interface__rosidl_generator_pyExport.cmake\n'}
+[0.461431] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/share/rm_interface/cmake/export_rm_interface__rosidl_generator_pyExport-release.cmake\n'}
+[0.461500] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/share/rm_interface/cmake/rosidl_cmake-extras.cmake\n'}
+[0.461567] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/share/rm_interface/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[0.461633] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/share/rm_interface/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[0.461685] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/share/rm_interface/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[0.461735] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/share/rm_interface/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[0.461785] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/share/rm_interface/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[0.461835] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/share/rm_interface/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[0.461885] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/share/rm_interface/cmake/rm_interfaceConfig.cmake\n'}
+[0.461947] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/share/rm_interface/cmake/rm_interfaceConfig-version.cmake\n'}
+[0.461997] (rm_interface) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/rm_interface/share/rm_interface/package.xml\n'}
+[0.464235] (rm_interface) CommandEnded: {'returncode': 0}
+[0.478719] (rm_interface) JobEnded: {'identifier': 'rm_interface', 'rc': 0}
+[0.479571] (path_motion_planning) JobStarted: {'identifier': 'path_motion_planning'}
+[0.491564] (path_motion_planning) JobProgress: {'identifier': 'path_motion_planning', 'progress': 'cmake'}
+[0.492500] (path_motion_planning) JobProgress: {'identifier': 'path_motion_planning', 'progress': 'build'}
+[0.493509] (path_motion_planning) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/sentry-nov/code/colcon_3/build/path_motion_planning', '--', '-j12', '-l12'], 'cwd': '/home/sentry-nov/code/colcon_3/build/path_motion_planning', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LIBRARY_PATH', '/usr/local/lib:'), ('C_INCLUDE_PATH', '/usr/local/include:'), ('LANGUAGE', 'en_GB:en'), ('USER', 'sentry-nov'), ('LC_TIME', 'en_GB.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/sentry-nov/code/colcon_3/install/rm_interface/lib:/home/sentry-nov/code/colcon_3/install/robot_decision_system/lib:/home/sentry-nov/code/colcon_3/install/rm_decision_system/lib:/home/sentry-nov/code/colcon_3/install/path_planning/lib:/home/sentry-nov/code/colcon_3/install/path_motion_planning/lib:/home/sentry-nov/code/colcon_3/install/m_detector/lib:/home/sentry-nov/code/colcon_3/install/fast_lio/lib:/home/sentry-nov/code/colcon_3/install/livox_ros_driver2/lib:/home/sentry-nov/code/colcon_3/install/altitude_map/lib:/usr/local/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/sentry-nov'), ('OLDPWD', '/home/sentry-nov'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_GB.UTF-8'), ('SYSTEMD_EXEC_PID', '1388'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('CPLUS_INCLUDE_PATH', '/usr/local/include:'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/sentry-nov/code/colcon_3/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'sentry-nov'), ('_', '/usr/bin/python3'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'sentry-nov'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/sentry-nov:@/tmp/.ICE-unix/1369,unix/sentry-nov:/tmp/.ICE-unix/1369'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_GB.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/bdbbb5ae_a25f_47e7_8b0f_bd78a15f438b'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_GB.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_GB.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.100'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/sentry-nov/code/colcon_3/install/tilted_lidar:/home/sentry-nov/code/colcon_3/install/rviz_plugin:/home/sentry-nov/code/colcon_3/install/robot_decision_system:/home/sentry-nov/code/colcon_3/install/rm_serial:/home/sentry-nov/code/colcon_3/install/rm_decision_system:/home/sentry-nov/code/colcon_3/install/rm_decision:/home/sentry-nov/code/colcon_3/install/motion_planning:/home/sentry-nov/code/colcon_3/install/path_planning:/home/sentry-nov/code/colcon_3/install/path_motion_planning:/home/sentry-nov/code/colcon_3/install/ikd_tree_mapping:/home/sentry-nov/code/colcon_3/install/rm_interface:/home/sentry-nov/code/colcon_3/install/point_lio:/home/sentry-nov/code/colcon_3/install/m_detector:/home/sentry-nov/code/colcon_3/install/fast_lio:/home/sentry-nov/code/colcon_3/install/livox_ros_driver2:/home/sentry-nov/code/colcon_3/install/icp_relocalization:/home/sentry-nov/code/colcon_3/install/altitude_map:/home/sentry-nov/code/colcon_3/install/debug_tools:/home/sentry-nov/code/colcon_3/install/auto_start:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_GB.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_GB.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'en_GB.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/sentry-nov/code/colcon_3/build/path_motion_planning'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/sentry-nov/code/colcon_3/install/robot_decision_system/local/lib/python3.10/dist-packages:/home/sentry-nov/code/colcon_3/install/rm_decision_system/local/lib/python3.10/dist-packages:/home/sentry-nov/code/colcon_3/install/rm_interface/local/lib/python3.10/dist-packages:/home/sentry-nov/code/colcon_3/install/fast_lio/local/lib/python3.10/dist-packages:/home/sentry-nov/code/colcon_3/install/livox_ros_driver2/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_GB.UTF-8'), ('LC_PAPER', 'en_GB.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/sentry-nov/code/colcon_3/install/rm_interface:/home/sentry-nov/code/colcon_3/install/debug_tools:/home/sentry-nov/code/colcon_3/install/tilted_lidar:/home/sentry-nov/code/colcon_3/install/rviz_plugin:/home/sentry-nov/code/colcon_3/install/robot_decision_system:/home/sentry-nov/code/colcon_3/install/rm_serial:/home/sentry-nov/code/colcon_3/install/rm_decision_system:/home/sentry-nov/code/colcon_3/install/rm_decision:/home/sentry-nov/code/colcon_3/install/motion_planning:/home/sentry-nov/code/colcon_3/install/path_planning:/home/sentry-nov/code/colcon_3/install/path_motion_planning:/home/sentry-nov/code/colcon_3/install/ikd_tree_mapping:/home/sentry-nov/code/colcon_3/install/point_lio:/home/sentry-nov/code/colcon_3/install/m_detector:/home/sentry-nov/code/colcon_3/install/fast_lio:/home/sentry-nov/code/colcon_3/install/livox_ros_driver2:/home/sentry-nov/code/colcon_3/install/icp_relocalization:/home/sentry-nov/code/colcon_3/install/altitude_map:/home/sentry-nov/code/colcon_3/install/auto_start:/opt/ros/humble')]), 'shell': False}
+[0.503333] (-) TimerEvent: {}
+[0.564925] (path_motion_planning) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target path_motion_planning\x1b[0m\n'}
+[0.566595] (path_motion_planning) StdoutLine: {'line': b'[ 10%] Built target test_based_node\n'}
+[0.603434] (-) TimerEvent: {}
+[0.645117] (path_motion_planning) StdoutLine: {'line': b'[ 68%] Built target path_motion_planning\n'}
+[0.665477] (path_motion_planning) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target nav_gl_ros_node\x1b[0m\n'}
+[0.665741] (path_motion_planning) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target nav_local_ros_node\x1b[0m\n'}
+[0.665868] (path_motion_planning) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target nav_global_ros_node\x1b[0m\n'}
+[0.703562] (-) TimerEvent: {}
+[0.711392] (path_motion_planning) StdoutLine: {'line': b'[ 84%] \x1b[32mBuilding CXX object CMakeFiles/nav_gl_ros_node.dir/src/nav_core/nav_gl_ros.cpp.o\x1b[0m\n'}
+[0.711612] (path_motion_planning) StdoutLine: {'line': b'[ 84%] \x1b[32mBuilding CXX object CMakeFiles/nav_local_ros_node.dir/src/nav_core/nav_local_ros.cpp.o\x1b[0m\n'}
+[0.711692] (path_motion_planning) StdoutLine: {'line': b'[ 89%] Built target nav_global_ros_node\n'}
+[0.803689] (-) TimerEvent: {}
+[0.904026] (-) TimerEvent: {}
+[1.004351] (-) TimerEvent: {}
+[1.104670] (-) TimerEvent: {}
+[1.205005] (-) TimerEvent: {}
+[1.305383] (-) TimerEvent: {}
+[1.405708] (-) TimerEvent: {}
+[1.506029] (-) TimerEvent: {}
+[1.606380] (-) TimerEvent: {}
+[1.706750] (-) TimerEvent: {}
+[1.807139] (-) TimerEvent: {}
+[1.907506] (-) TimerEvent: {}
+[2.007870] (-) TimerEvent: {}
+[2.108325] (-) TimerEvent: {}
+[2.208679] (-) TimerEvent: {}
+[2.309055] (-) TimerEvent: {}
+[2.409409] (-) TimerEvent: {}
+[2.509765] (-) TimerEvent: {}
+[2.610102] (-) TimerEvent: {}
+[2.710491] (-) TimerEvent: {}
+[2.810923] (-) TimerEvent: {}
+[2.911318] (-) TimerEvent: {}
+[3.011765] (-) TimerEvent: {}
+[3.112172] (-) TimerEvent: {}
+[3.212601] (-) TimerEvent: {}
+[3.312931] (-) TimerEvent: {}
+[3.413292] (-) TimerEvent: {}
+[3.513646] (-) TimerEvent: {}
+[3.613988] (-) TimerEvent: {}
+[3.714303] (-) TimerEvent: {}
+[3.814641] (-) TimerEvent: {}
+[3.914973] (-) TimerEvent: {}
+[4.015296] (-) TimerEvent: {}
+[4.115627] (-) TimerEvent: {}
+[4.215971] (-) TimerEvent: {}
+[4.316299] (-) TimerEvent: {}
+[4.416626] (-) TimerEvent: {}
+[4.516955] (-) TimerEvent: {}
+[4.617285] (-) TimerEvent: {}
+[4.717626] (-) TimerEvent: {}
+[4.817944] (-) TimerEvent: {}
+[4.918266] (-) TimerEvent: {}
+[5.018592] (-) TimerEvent: {}
+[5.118924] (-) TimerEvent: {}
+[5.219257] (-) TimerEvent: {}
+[5.319591] (-) TimerEvent: {}
+[5.419915] (-) TimerEvent: {}
+[5.520251] (-) TimerEvent: {}
+[5.620592] (-) TimerEvent: {}
+[5.720919] (-) TimerEvent: {}
+[5.821260] (-) TimerEvent: {}
+[5.921629] (-) TimerEvent: {}
+[6.021950] (-) TimerEvent: {}
+[6.122276] (-) TimerEvent: {}
+[6.222645] (-) TimerEvent: {}
+[6.323052] (-) TimerEvent: {}
+[6.423443] (-) TimerEvent: {}
+[6.523825] (-) TimerEvent: {}
+[6.624211] (-) TimerEvent: {}
+[6.724600] (-) TimerEvent: {}
+[6.824984] (-) TimerEvent: {}
+[6.925395] (-) TimerEvent: {}
+[7.025785] (-) TimerEvent: {}
+[7.126168] (-) TimerEvent: {}
+[7.226563] (-) TimerEvent: {}
+[7.326977] (-) TimerEvent: {}
+[7.427441] (-) TimerEvent: {}
+[7.527906] (-) TimerEvent: {}
+[7.628342] (-) TimerEvent: {}
+[7.728777] (-) TimerEvent: {}
+[7.829209] (-) TimerEvent: {}
+[7.929697] (-) TimerEvent: {}
+[8.030125] (-) TimerEvent: {}
+[8.130562] (-) TimerEvent: {}
+[8.230995] (-) TimerEvent: {}
+[8.331432] (-) TimerEvent: {}
+[8.431869] (-) TimerEvent: {}
+[8.532309] (-) TimerEvent: {}
+[8.632743] (-) TimerEvent: {}
+[8.733182] (-) TimerEvent: {}
+[8.833641] (-) TimerEvent: {}
+[8.934097] (-) TimerEvent: {}
+[9.034537] (-) TimerEvent: {}
+[9.134975] (-) TimerEvent: {}
+[9.235419] (-) TimerEvent: {}
+[9.335863] (-) TimerEvent: {}
+[9.436304] (-) TimerEvent: {}
+[9.536742] (-) TimerEvent: {}
+[9.637181] (-) TimerEvent: {}
+[9.737672] (-) TimerEvent: {}
+[9.838099] (-) TimerEvent: {}
+[9.938521] (-) TimerEvent: {}
+[10.038877] (-) TimerEvent: {}
+[10.139314] (-) TimerEvent: {}
+[10.239753] (-) TimerEvent: {}
+[10.340178] (-) TimerEvent: {}
+[10.440614] (-) TimerEvent: {}
+[10.541045] (-) TimerEvent: {}
+[10.641483] (-) TimerEvent: {}
+[10.741910] (-) TimerEvent: {}
+[10.842407] (-) TimerEvent: {}
+[10.942843] (-) TimerEvent: {}
+[11.043280] (-) TimerEvent: {}
+[11.143707] (-) TimerEvent: {}
+[11.244152] (-) TimerEvent: {}
+[11.344581] (-) TimerEvent: {}
+[11.445015] (-) TimerEvent: {}
+[11.545451] (-) TimerEvent: {}
+[11.645887] (-) TimerEvent: {}
+[11.746331] (-) TimerEvent: {}
+[11.846772] (-) TimerEvent: {}
+[11.947208] (-) TimerEvent: {}
+[12.047645] (-) TimerEvent: {}
+[12.148077] (-) TimerEvent: {}
+[12.248507] (-) TimerEvent: {}
+[12.348944] (-) TimerEvent: {}
+[12.449399] (-) TimerEvent: {}
+[12.549822] (-) TimerEvent: {}
+[12.650249] (-) TimerEvent: {}
+[12.750681] (-) TimerEvent: {}
+[12.851130] (-) TimerEvent: {}
+[12.951594] (-) TimerEvent: {}
+[13.052032] (-) TimerEvent: {}
+[13.152465] (-) TimerEvent: {}
+[13.252891] (-) TimerEvent: {}
+[13.353363] (-) TimerEvent: {}
+[13.453795] (-) TimerEvent: {}
+[13.554220] (-) TimerEvent: {}
+[13.654648] (-) TimerEvent: {}
+[13.755107] (-) TimerEvent: {}
+[13.855549] (-) TimerEvent: {}
+[13.955985] (-) TimerEvent: {}
+[14.056417] (-) TimerEvent: {}
+[14.156852] (-) TimerEvent: {}
+[14.257278] (-) TimerEvent: {}
+[14.357732] (-) TimerEvent: {}
+[14.458166] (-) TimerEvent: {}
+[14.558579] (-) TimerEvent: {}
+[14.658998] (-) TimerEvent: {}
+[14.759461] (-) TimerEvent: {}
+[14.860040] (-) TimerEvent: {}
+[14.960456] (-) TimerEvent: {}
+[15.060862] (-) TimerEvent: {}
+[15.161254] (-) TimerEvent: {}
+[15.261676] (-) TimerEvent: {}
+[15.362058] (-) TimerEvent: {}
+[15.462398] (-) TimerEvent: {}
+[15.562792] (-) TimerEvent: {}
+[15.663189] (-) TimerEvent: {}
+[15.763586] (-) TimerEvent: {}
+[15.863982] (-) TimerEvent: {}
+[15.964379] (-) TimerEvent: {}
+[16.064781] (-) TimerEvent: {}
+[16.165186] (-) TimerEvent: {}
+[16.265627] (-) TimerEvent: {}
+[16.366025] (-) TimerEvent: {}
+[16.466423] (-) TimerEvent: {}
+[16.566820] (-) TimerEvent: {}
+[16.667221] (-) TimerEvent: {}
+[16.767621] (-) TimerEvent: {}
+[16.868022] (-) TimerEvent: {}
+[16.968421] (-) TimerEvent: {}
+[17.068825] (-) TimerEvent: {}
+[17.169225] (-) TimerEvent: {}
+[17.269651] (-) TimerEvent: {}
+[17.370052] (-) TimerEvent: {}
+[17.470447] (-) TimerEvent: {}
+[17.570851] (-) TimerEvent: {}
+[17.671252] (-) TimerEvent: {}
+[17.771667] (-) TimerEvent: {}
+[17.872069] (-) TimerEvent: {}
+[17.972478] (-) TimerEvent: {}
+[18.072883] (-) TimerEvent: {}
+[18.173293] (-) TimerEvent: {}
+[18.273732] (-) TimerEvent: {}
+[18.374138] (-) TimerEvent: {}
+[18.474548] (-) TimerEvent: {}
+[18.574955] (-) TimerEvent: {}
+[18.675364] (-) TimerEvent: {}
+[18.775769] (-) TimerEvent: {}
+[18.876177] (-) TimerEvent: {}
+[18.976581] (-) TimerEvent: {}
+[19.076978] (-) TimerEvent: {}
+[19.177396] (-) TimerEvent: {}
+[19.277819] (-) TimerEvent: {}
+[19.378208] (-) TimerEvent: {}
+[19.478606] (-) TimerEvent: {}
+[19.579008] (-) TimerEvent: {}
+[19.679407] (-) TimerEvent: {}
+[19.779792] (-) TimerEvent: {}
+[19.880189] (-) TimerEvent: {}
+[19.980580] (-) TimerEvent: {}
+[20.080981] (-) TimerEvent: {}
+[20.181385] (-) TimerEvent: {}
+[20.281780] (-) TimerEvent: {}
+[20.382174] (-) TimerEvent: {}
+[20.482565] (-) TimerEvent: {}
+[20.582955] (-) TimerEvent: {}
+[20.683351] (-) TimerEvent: {}
+[20.783756] (-) TimerEvent: {}
+[20.884165] (-) TimerEvent: {}
+[20.984565] (-) TimerEvent: {}
+[21.084966] (-) TimerEvent: {}
+[21.185386] (-) TimerEvent: {}
+[21.285780] (-) TimerEvent: {}
+[21.386176] (-) TimerEvent: {}
+[21.486574] (-) TimerEvent: {}
+[21.586960] (-) TimerEvent: {}
+[21.687349] (-) TimerEvent: {}
+[21.787738] (-) TimerEvent: {}
+[21.888127] (-) TimerEvent: {}
+[21.988526] (-) TimerEvent: {}
+[22.088922] (-) TimerEvent: {}
+[22.189364] (-) TimerEvent: {}
+[22.289786] (-) TimerEvent: {}
+[22.390188] (-) TimerEvent: {}
+[22.490591] (-) TimerEvent: {}
+[22.590985] (-) TimerEvent: {}
+[22.691387] (-) TimerEvent: {}
+[22.791790] (-) TimerEvent: {}
+[22.892199] (-) TimerEvent: {}
+[22.992597] (-) TimerEvent: {}
+[23.092995] (-) TimerEvent: {}
+[23.193397] (-) TimerEvent: {}
+[23.293802] (-) TimerEvent: {}
+[23.394231] (-) TimerEvent: {}
+[23.494618] (-) TimerEvent: {}
+[23.595000] (-) TimerEvent: {}
+[23.695401] (-) TimerEvent: {}
+[23.795787] (-) TimerEvent: {}
+[23.896188] (-) TimerEvent: {}
+[23.996571] (-) TimerEvent: {}
+[24.096955] (-) TimerEvent: {}
+[24.197376] (-) TimerEvent: {}
+[24.297775] (-) TimerEvent: {}
+[24.398177] (-) TimerEvent: {}
+[24.498576] (-) TimerEvent: {}
+[24.598964] (-) TimerEvent: {}
+[24.699372] (-) TimerEvent: {}
+[24.799767] (-) TimerEvent: {}
+[24.900156] (-) TimerEvent: {}
+[25.000550] (-) TimerEvent: {}
+[25.100939] (-) TimerEvent: {}
+[25.201364] (-) TimerEvent: {}
+[25.301757] (-) TimerEvent: {}
+[25.402137] (-) TimerEvent: {}
+[25.502541] (-) TimerEvent: {}
+[25.602930] (-) TimerEvent: {}
+[25.703322] (-) TimerEvent: {}
+[25.803717] (-) TimerEvent: {}
+[25.904117] (-) TimerEvent: {}
+[26.004518] (-) TimerEvent: {}
+[26.104954] (-) TimerEvent: {}
+[26.205404] (-) TimerEvent: {}
+[26.305813] (-) TimerEvent: {}
+[26.406230] (-) TimerEvent: {}
+[26.506647] (-) TimerEvent: {}
+[26.607070] (-) TimerEvent: {}
+[26.707495] (-) TimerEvent: {}
+[26.807921] (-) TimerEvent: {}
+[26.908343] (-) TimerEvent: {}
+[27.008771] (-) TimerEvent: {}
+[27.109214] (-) TimerEvent: {}
+[27.209663] (-) TimerEvent: {}
+[27.310083] (-) TimerEvent: {}
+[27.410498] (-) TimerEvent: {}
+[27.510919] (-) TimerEvent: {}
+[27.611341] (-) TimerEvent: {}
+[27.711759] (-) TimerEvent: {}
+[27.812178] (-) TimerEvent: {}
+[27.912598] (-) TimerEvent: {}
+[28.013014] (-) TimerEvent: {}
+[28.113430] (-) TimerEvent: {}
+[28.213853] (-) TimerEvent: {}
+[28.314258] (-) TimerEvent: {}
+[28.414586] (-) TimerEvent: {}
+[28.514908] (-) TimerEvent: {}
+[28.614079] (path_motion_planning) StdoutLine: {'line': b'[ 94%] \x1b[32m\x1b[1mLinking CXX executable nav_gl_ros_node\x1b[0m\n'}
+[28.614984] (-) TimerEvent: {}
+[28.715272] (-) TimerEvent: {}
+[28.815715] (-) TimerEvent: {}
+[28.916117] (-) TimerEvent: {}
+[29.016524] (-) TimerEvent: {}
+[29.116953] (-) TimerEvent: {}
+[29.217455] (-) TimerEvent: {}
+[29.317889] (-) TimerEvent: {}
+[29.333428] (path_motion_planning) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable nav_local_ros_node\x1b[0m\n'}
+[29.418047] (-) TimerEvent: {}
+[29.518436] (-) TimerEvent: {}
+[29.556080] (path_motion_planning) StdoutLine: {'line': b'[100%] Built target nav_gl_ros_node\n'}
+[29.618553] (-) TimerEvent: {}
+[29.718930] (-) TimerEvent: {}
+[29.819385] (-) TimerEvent: {}
+[29.919849] (-) TimerEvent: {}
+[30.020264] (-) TimerEvent: {}
+[30.120660] (-) TimerEvent: {}
+[30.221045] (-) TimerEvent: {}
+[30.233153] (path_motion_planning) StdoutLine: {'line': b'[100%] Built target nav_local_ros_node\n'}
+[30.248560] (path_motion_planning) CommandEnded: {'returncode': 0}
+[30.249927] (path_motion_planning) JobProgress: {'identifier': 'path_motion_planning', 'progress': 'install'}
+[30.250394] (path_motion_planning) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/sentry-nov/code/colcon_3/build/path_motion_planning'], 'cwd': '/home/sentry-nov/code/colcon_3/build/path_motion_planning', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LIBRARY_PATH', '/usr/local/lib:'), ('C_INCLUDE_PATH', '/usr/local/include:'), ('LANGUAGE', 'en_GB:en'), ('USER', 'sentry-nov'), ('LC_TIME', 'en_GB.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/sentry-nov/code/colcon_3/install/rm_interface/lib:/home/sentry-nov/code/colcon_3/install/robot_decision_system/lib:/home/sentry-nov/code/colcon_3/install/rm_decision_system/lib:/home/sentry-nov/code/colcon_3/install/path_planning/lib:/home/sentry-nov/code/colcon_3/install/path_motion_planning/lib:/home/sentry-nov/code/colcon_3/install/m_detector/lib:/home/sentry-nov/code/colcon_3/install/fast_lio/lib:/home/sentry-nov/code/colcon_3/install/livox_ros_driver2/lib:/home/sentry-nov/code/colcon_3/install/altitude_map/lib:/usr/local/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/sentry-nov'), ('OLDPWD', '/home/sentry-nov'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_GB.UTF-8'), ('SYSTEMD_EXEC_PID', '1388'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('CPLUS_INCLUDE_PATH', '/usr/local/include:'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/sentry-nov/code/colcon_3/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'sentry-nov'), ('_', '/usr/bin/python3'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'sentry-nov'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/sentry-nov:@/tmp/.ICE-unix/1369,unix/sentry-nov:/tmp/.ICE-unix/1369'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_GB.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/bdbbb5ae_a25f_47e7_8b0f_bd78a15f438b'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_GB.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_GB.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.100'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/sentry-nov/code/colcon_3/install/tilted_lidar:/home/sentry-nov/code/colcon_3/install/rviz_plugin:/home/sentry-nov/code/colcon_3/install/robot_decision_system:/home/sentry-nov/code/colcon_3/install/rm_serial:/home/sentry-nov/code/colcon_3/install/rm_decision_system:/home/sentry-nov/code/colcon_3/install/rm_decision:/home/sentry-nov/code/colcon_3/install/motion_planning:/home/sentry-nov/code/colcon_3/install/path_planning:/home/sentry-nov/code/colcon_3/install/path_motion_planning:/home/sentry-nov/code/colcon_3/install/ikd_tree_mapping:/home/sentry-nov/code/colcon_3/install/rm_interface:/home/sentry-nov/code/colcon_3/install/point_lio:/home/sentry-nov/code/colcon_3/install/m_detector:/home/sentry-nov/code/colcon_3/install/fast_lio:/home/sentry-nov/code/colcon_3/install/livox_ros_driver2:/home/sentry-nov/code/colcon_3/install/icp_relocalization:/home/sentry-nov/code/colcon_3/install/altitude_map:/home/sentry-nov/code/colcon_3/install/debug_tools:/home/sentry-nov/code/colcon_3/install/auto_start:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_GB.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_GB.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'en_GB.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/sentry-nov/code/colcon_3/build/path_motion_planning'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/sentry-nov/code/colcon_3/install/robot_decision_system/local/lib/python3.10/dist-packages:/home/sentry-nov/code/colcon_3/install/rm_decision_system/local/lib/python3.10/dist-packages:/home/sentry-nov/code/colcon_3/install/rm_interface/local/lib/python3.10/dist-packages:/home/sentry-nov/code/colcon_3/install/fast_lio/local/lib/python3.10/dist-packages:/home/sentry-nov/code/colcon_3/install/livox_ros_driver2/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_GB.UTF-8'), ('LC_PAPER', 'en_GB.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/sentry-nov/code/colcon_3/install/rm_interface:/home/sentry-nov/code/colcon_3/install/debug_tools:/home/sentry-nov/code/colcon_3/install/tilted_lidar:/home/sentry-nov/code/colcon_3/install/rviz_plugin:/home/sentry-nov/code/colcon_3/install/robot_decision_system:/home/sentry-nov/code/colcon_3/install/rm_serial:/home/sentry-nov/code/colcon_3/install/rm_decision_system:/home/sentry-nov/code/colcon_3/install/rm_decision:/home/sentry-nov/code/colcon_3/install/motion_planning:/home/sentry-nov/code/colcon_3/install/path_planning:/home/sentry-nov/code/colcon_3/install/path_motion_planning:/home/sentry-nov/code/colcon_3/install/ikd_tree_mapping:/home/sentry-nov/code/colcon_3/install/point_lio:/home/sentry-nov/code/colcon_3/install/m_detector:/home/sentry-nov/code/colcon_3/install/fast_lio:/home/sentry-nov/code/colcon_3/install/livox_ros_driver2:/home/sentry-nov/code/colcon_3/install/icp_relocalization:/home/sentry-nov/code/colcon_3/install/altitude_map:/home/sentry-nov/code/colcon_3/install/auto_start:/opt/ros/humble')]), 'shell': False}
+[30.260834] (path_motion_planning) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[30.263217] (path_motion_planning) StdoutLine: {'line': b'-- Installing: /home/sentry-nov/code/colcon_3/install/path_motion_planning/lib/libpath_motion_planning.so\n'}
+[30.264279] (path_motion_planning) StdoutLine: {'line': b'-- Set runtime path of "/home/sentry-nov/code/colcon_3/install/path_motion_planning/lib/libpath_motion_planning.so" to ""\n'}
+[30.264516] (path_motion_planning) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/path_motion_planning/share/path_motion_planning/environment/library_path.sh\n'}
+[30.264700] (path_motion_planning) StdoutLine: {'line': b'-- Installing: /home/sentry-nov/code/colcon_3/install/path_motion_planning/share/path_motion_planning/environment/library_path.dsv\n'}
+[30.265007] (path_motion_planning) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/path_motion_planning/include\n'}
+[30.265111] (path_motion_planning) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/path_motion_planning/include/path_motion_planning\n'}
+[30.265230] (path_motion_planning) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/path_motion_planning/include/path_motion_planning/util\n'}
+[30.265343] (path_motion_planning) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/path_motion_planning/include/path_motion_planning/util/group_runner.h\n'}
+[30.265462] (path_motion_planning) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/path_motion_planning/include/path_motion_planning/util/vis_ros.h\n'}
+[30.265554] (path_motion_planning) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/path_motion_planning/include/path_motion_planning/util/vel_estimator.h\n'}
+[30.265660] (path_motion_planning) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/path_motion_planning/include/path_motion_planning/nav_core\n'}
+[30.265740] (path_motion_planning) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/path_motion_planning/include/path_motion_planning/nav_core/nav_core.h\n'}
+[30.265825] (path_motion_planning) StdoutLine: {'line': b'-- Installing: /home/sentry-nov/code/colcon_3/install/path_motion_planning/include/path_motion_planning/nav_core/nav_local_track.h\n'}
+[30.265958] (path_motion_planning) StdoutLine: {'line': b'-- Installing: /home/sentry-nov/code/colcon_3/install/path_motion_planning/include/path_motion_planning/nav_core/nav_local.h\n'}
+[30.266054] (path_motion_planning) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/path_motion_planning/include/path_motion_planning/nav_core/nav_global.h\n'}
+[30.266133] (path_motion_planning) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/path_motion_planning/include/path_motion_planning/nav_core/nav_local_ros.hpp\n'}
+[30.266209] (path_motion_planning) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/path_motion_planning/include/path_motion_planning/nav_core/nav_gl_ros.hpp\n'}
+[30.266308] (path_motion_planning) StdoutLine: {'line': b'-- Installing: /home/sentry-nov/code/colcon_3/install/path_motion_planning/include/path_motion_planning/nav_core/nav_local_base.hpp\n'}
+[30.266387] (path_motion_planning) StdoutLine: {'line': b'-- Installing: /home/sentry-nov/code/colcon_3/install/path_motion_planning/include/path_motion_planning/nav_core/nav_gl.h\n'}
+[30.266480] (path_motion_planning) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/path_motion_planning/include/path_motion_planning/motion\n'}
+[30.266581] (path_motion_planning) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/path_motion_planning/include/path_motion_planning/motion/tracker.h\n'}
+[30.266684] (path_motion_planning) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/path_motion_planning/include/path_motion_planning/motion/controller.h\n'}
+[30.266763] (path_motion_planning) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/path_motion_planning/include/path_motion_planning/path_searcher\n'}
+[30.266840] (path_motion_planning) StdoutLine: {'line': b'-- Installing: /home/sentry-nov/code/colcon_3/install/path_motion_planning/include/path_motion_planning/path_searcher/path_searcher.h\n'}
+[30.266944] (path_motion_planning) StdoutLine: {'line': b'-- Installing: /home/sentry-nov/code/colcon_3/install/path_motion_planning/include/path_motion_planning/path_searcher/theta_star_explored.h\n'}
+[30.267072] (path_motion_planning) StdoutLine: {'line': b'-- Installing: /home/sentry-nov/code/colcon_3/install/path_motion_planning/include/path_motion_planning/path_searcher/theta_star_track.h\n'}
+[30.267240] (path_motion_planning) StdoutLine: {'line': b'-- Installing: /home/sentry-nov/code/colcon_3/install/path_motion_planning/include/path_motion_planning/path_searcher/theta_star.h\n'}
+[30.267425] (path_motion_planning) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/path_motion_planning/include/path_motion_planning/path_searcher/gird_node.h\n'}
+[30.269291] (path_motion_planning) StdoutLine: {'line': b'-- Installing: /home/sentry-nov/code/colcon_3/install/path_motion_planning/lib/path_motion_planning/nav_global_ros_node\n'}
+[30.271122] (path_motion_planning) StdoutLine: {'line': b'-- Set runtime path of "/home/sentry-nov/code/colcon_3/install/path_motion_planning/lib/path_motion_planning/nav_global_ros_node" to ""\n'}
+[30.273379] (path_motion_planning) StdoutLine: {'line': b'-- Installing: /home/sentry-nov/code/colcon_3/install/path_motion_planning/lib/path_motion_planning/nav_local_ros_node\n'}
+[30.277905] (path_motion_planning) StdoutLine: {'line': b'-- Set runtime path of "/home/sentry-nov/code/colcon_3/install/path_motion_planning/lib/path_motion_planning/nav_local_ros_node" to ""\n'}
+[30.278725] (path_motion_planning) StdoutLine: {'line': b'-- Installing: /home/sentry-nov/code/colcon_3/install/path_motion_planning/lib/path_motion_planning/nav_gl_ros_node\n'}
+[30.282996] (path_motion_planning) StdoutLine: {'line': b'-- Set runtime path of "/home/sentry-nov/code/colcon_3/install/path_motion_planning/lib/path_motion_planning/nav_gl_ros_node" to ""\n'}
+[30.310138] (path_motion_planning) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/path_motion_planning/lib/path_motion_planning/test_based_node\n'}
+[30.310591] (path_motion_planning) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/path_motion_planning/share/ament_index/resource_index/package_run_dependencies/path_motion_planning\n'}
+[30.310958] (path_motion_planning) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/path_motion_planning/share/ament_index/resource_index/parent_prefix_path/path_motion_planning\n'}
+[30.311086] (path_motion_planning) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/path_motion_planning/share/path_motion_planning/environment/ament_prefix_path.sh\n'}
+[30.311164] (path_motion_planning) StdoutLine: {'line': b'-- Installing: /home/sentry-nov/code/colcon_3/install/path_motion_planning/share/path_motion_planning/environment/ament_prefix_path.dsv\n'}
+[30.311287] (path_motion_planning) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/path_motion_planning/share/path_motion_planning/environment/path.sh\n'}
+[30.311403] (path_motion_planning) StdoutLine: {'line': b'-- Installing: /home/sentry-nov/code/colcon_3/install/path_motion_planning/share/path_motion_planning/environment/path.dsv\n'}
+[30.311605] (path_motion_planning) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/path_motion_planning/share/path_motion_planning/local_setup.bash\n'}
+[30.311730] (path_motion_planning) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/path_motion_planning/share/path_motion_planning/local_setup.sh\n'}
+[30.311824] (path_motion_planning) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/path_motion_planning/share/path_motion_planning/local_setup.zsh\n'}
+[30.311903] (path_motion_planning) StdoutLine: {'line': b'-- Installing: /home/sentry-nov/code/colcon_3/install/path_motion_planning/share/path_motion_planning/local_setup.dsv\n'}
+[30.312029] (path_motion_planning) StdoutLine: {'line': b'-- Installing: /home/sentry-nov/code/colcon_3/install/path_motion_planning/share/path_motion_planning/package.dsv\n'}
+[30.312258] (path_motion_planning) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/path_motion_planning/share/ament_index/resource_index/packages/path_motion_planning\n'}
+[30.312365] (path_motion_planning) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/path_motion_planning/share/path_motion_planning/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[30.312483] (path_motion_planning) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/path_motion_planning/share/path_motion_planning/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[30.312578] (path_motion_planning) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/path_motion_planning/share/path_motion_planning/cmake/path_motion_planningConfig.cmake\n'}
+[30.312655] (path_motion_planning) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/path_motion_planning/share/path_motion_planning/cmake/path_motion_planningConfig-version.cmake\n'}
+[30.312736] (path_motion_planning) StdoutLine: {'line': b'-- Up-to-date: /home/sentry-nov/code/colcon_3/install/path_motion_planning/share/path_motion_planning/package.xml\n'}
+[30.315002] (path_motion_planning) CommandEnded: {'returncode': 0}
+[30.321116] (-) TimerEvent: {}
+[30.331019] (path_motion_planning) JobEnded: {'identifier': 'path_motion_planning', 'rc': 0}
+[30.332137] (-) EventReactorShutdown: {}

@@ -1,0 +1,1 @@
+ros2 run rm_decision rm_decision_node

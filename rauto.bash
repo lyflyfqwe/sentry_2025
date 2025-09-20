@@ -1,0 +1,1 @@
+ros2 launch auto_start planning.launch.py

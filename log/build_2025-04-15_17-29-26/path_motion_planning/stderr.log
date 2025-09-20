@@ -1,0 +1,18 @@
+gmake[2]: Warning: File '/home/sentry-nov/code/colcon_3/src/navigation/path_motion_planning/include/path_motion_planning/nav_core/nav_global.h' has modification time 8394 s in the future
+[01m[K/home/sentry-nov/code/colcon_3/src/navigation/path_motion_planning/src/nav_core/nav_local_track.cpp:[m[K In member function ‘[01m[Kvirtual bool path_motion_planning::nav_core::NavLocalTrack::selectPosFromGPath(std::vector<Eigen::Matrix<double, 3, 1> >&, bool&)[m[K’:
+[01m[K/home/sentry-nov/code/colcon_3/src/navigation/path_motion_planning/src/nav_core/nav_local_track.cpp:34:32:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kaltitude_map::LocalMap::findSafeClosed(Eigen::Matrix<int, 3, 1>&, int&, Eigen::Vector3i&)[m[K’
+   34 |         if([01;31m[Kmap_->findSafeClosed(pos_3i, nav_cfg_.safe_radius, cur_safe_i)[m[K) path_3i_.push_back(cur_safe_i);
+      |            [01;31m[K~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/sentry-nov/code/colcon_3/install/altitude_map/include/altitude_map/local_map.h:4[m[K,
+                 from [01m[K/home/sentry-nov/code/colcon_3/src/navigation/path_motion_planning/include/path_motion_planning/path_searcher/path_searcher.h:5[m[K,
+                 from [01m[K/home/sentry-nov/code/colcon_3/src/navigation/path_motion_planning/include/path_motion_planning/path_searcher/theta_star_explored.h:4[m[K,
+                 from [01m[K/home/sentry-nov/code/colcon_3/src/navigation/path_motion_planning/include/path_motion_planning/nav_core/nav_local.h:5[m[K,
+                 from [01m[K/home/sentry-nov/code/colcon_3/src/navigation/path_motion_planning/include/path_motion_planning/nav_core/nav_local_track.h:4[m[K,
+                 from [01m[K/home/sentry-nov/code/colcon_3/src/navigation/path_motion_planning/src/nav_core/nav_local_track.cpp:1[m[K:
+[01m[K/home/sentry-nov/code/colcon_3/install/altitude_map/include/altitude_map/altitude_map.h:295:10:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbool altitude_map::AltitudeMap::findSafeClosed(const Vector3i&, int, double, Eigen::Vector3i&, std::function<bool(int, int)>)[m[K’
+  295 |     bool [01;36m[KfindSafeClosed[m[K(const Eigen::Vector3i& index, int radius, double safe_cost,
+      |          [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/sentry-nov/code/colcon_3/install/altitude_map/include/altitude_map/altitude_map.h:295:10:[m[K [01;36m[Knote: [m[K  candidate expects 5 arguments, 3 provided
+gmake[2]: *** [CMakeFiles/path_motion_planning.dir/build.make:188: CMakeFiles/path_motion_planning.dir/src/nav_core/nav_local_track.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:147: CMakeFiles/path_motion_planning.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

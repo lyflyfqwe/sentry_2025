@@ -1,0 +1,1 @@
+float32 robot_speed_rate #速度档位 (0.5~2.5)

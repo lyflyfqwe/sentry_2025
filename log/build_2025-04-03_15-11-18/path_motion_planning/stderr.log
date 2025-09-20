@@ -1,0 +1,19 @@
+gmake[2]: Warning: File '/home/sentry-nov/code/colcon_3/src/navigation/path_motion_planning/include/path_motion_planning/path_searcher/path_searcher.h' has modification time 21066 s in the future
+[01m[K/home/sentry-nov/code/colcon_3/src/navigation/path_motion_planning/src/nav_core/nav_local.cpp:[m[K In member function ‘[01m[Kvoid path_motion_planning::nav_core::NavLocal::init()[m[K’:
+[01m[K/home/sentry-nov/code/colcon_3/src/navigation/path_motion_planning/src/nav_core/nav_local.cpp:241:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = class altitude_map::LocalMap[m[K’ {aka ‘[01m[Kclass altitude_map::LocalMap[m[K’} has no member named ‘[01m[KsetAltitudeMapParams[m[K’
+  241 |     map_->[01;31m[KsetAltitudeMapParams[m[K(l_cfg_.alti_cfg.trun_radius, l_cfg_.alti_cfg.down_spread_dis);
+      |           [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/sentry-nov/code/colcon_3/src/navigation/path_motion_planning/src/nav_core/nav_gl.cpp:[m[K In member function ‘[01m[Kvoid path_motion_planning::nav_core::NavGL::init()[m[K’:
+[01m[K/home/sentry-nov/code/colcon_3/src/navigation/path_motion_planning/src/nav_core/nav_gl.cpp:31:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = class altitude_map::GlobalMap[m[K’ {aka ‘[01m[Kclass altitude_map::GlobalMap[m[K’} has no member named ‘[01m[KsetAltitudeMapParams[m[K’
+   31 |     map_g_->[01;31m[KsetAltitudeMapParams[m[K(nav_cfg_g_.alti_cfg.trun_radius, nav_cfg_g_.alti_cfg.down_spread_dis);
+      |             [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/sentry-nov/code/colcon_3/src/navigation/path_motion_planning/src/path_searcher/theta_star_assist.cpp:[m[K In lambda function:
+[01m[K/home/sentry-nov/code/colcon_3/src/navigation/path_motion_planning/src/path_searcher/theta_star_assist.cpp:116:84:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kerror_z[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  116 |     auto sameIndexXY = [&](const Eigen::Vector3i& a, const Eigen::Vector3i& b, [01;35m[Kint error_z[m[K)->bool {
+      |                                                                                [01;35m[K~~~~^~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/path_motion_planning.dir/build.make:174: CMakeFiles/path_motion_planning.dir/src/nav_core/nav_gl.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[2]: *** [CMakeFiles/path_motion_planning.dir/build.make:160: CMakeFiles/path_motion_planning.dir/src/nav_core/nav_local.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:145: CMakeFiles/path_motion_planning.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake: *** [Makefile:146: all] Error 2

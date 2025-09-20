@@ -1,0 +1,1 @@
+ros2 run path_motion_planning nav_gl_ros_node

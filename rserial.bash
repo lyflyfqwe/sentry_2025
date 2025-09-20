@@ -1,0 +1,1 @@
+ros2 run rm_serial rm_serial_rec_command_node

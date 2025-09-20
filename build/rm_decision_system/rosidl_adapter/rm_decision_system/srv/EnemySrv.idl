@@ -1,0 +1,35 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from rm_decision_system/srv/EnemySrv.srv
+// generated code does not contain a copyright notice
+
+
+module rm_decision_system {
+  module srv {
+    @verbatim (language="comment", text=
+      "敌人坐标")
+    struct EnemySrv_Request {
+      float x1;
+
+      float y1;
+
+      float z1;
+
+      float x2;
+
+      float y2;
+
+      float z2;
+
+      @verbatim (language="comment", text=
+        "活跃敌人数量")
+      int32 enemy_count;
+    };
+    @verbatim (language="comment", text=
+      "追击结果")
+    struct EnemySrv_Response {
+      @verbatim (language="comment", text=
+        "1=成功, 2=失败, 3=运行中, 4=未知错误")
+      int32 result;
+    };
+  };
+};
