@@ -31,7 +31,7 @@
 #include <iomanip>
 #include <math.h>
 #include <stdint.h>
-
+#include <string.h>
 #include "include/ros_headers.h"
 
 #include "driver_node.h"
